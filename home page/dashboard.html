@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - MedAssist</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">MedAssist</a>
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="nav-link">Medical Prediction</a>
+            <div class="profile">
+                <img src="https://ui-avatars.com/api/?name=John+Doe" alt="Profile" class="profile-img">
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="user-info">
+            <h1>Welcome, Dr. John Doe</h1>
+            <p class="qualification">MBBS, MD (Cardiology)</p>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="dashboard-card ocr-card">
+                <div class="card-icon">
+                    <i class="fas fa-file-medical"></i>
+                </div>
+                <h2>OCR Scanner</h2>
+                <p>Scan and analyze medical documents</p>
+                <a href="#" class="card-btn">Open Scanner</a>
+            </div>
+
+            <div class="dashboard-card appointments-card">
+                <div class="card-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h2>Upcoming Appointments</h2>
+                <div class="appointment-list">
+                    <div class="appointment-item">
+                        <p class="appointment-time">Today, 2:30 PM</p>
+                        <p class="appointment-patient">Sarah Johnson</p>
+                    </div>
+                    <div class="appointment-item">
+                        <p class="appointment-time">Tomorrow, 10:00 AM</p>
+                        <p class="appointment-patient">Michael Chen</p>
+                    </div>
+                </div>
+                <a href="#" class="card-btn">View All</a>
+            </div>
+
+            <div class="dashboard-card alerts-card">
+                <div class="card-icon">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <h2>Alerts</h2>
+                <div class="alert-list">
+                    <div class="alert-item">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p>New test results available for Patient #123</p>
+                    </div>
+                    <div class="alert-item">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Schedule update: 2 new appointments</p>
+                    </div>
+                </div>
+                <a href="#" class="card-btn">View All</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
