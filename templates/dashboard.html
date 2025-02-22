@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - MedAssist</title>
-    <link rel="stylesheet" href="D:\Github\Techathon-Error404\static\css\dashboard.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
-        <a href="index.html" class="navbar-brand">MedAssist</a>
+        <a href="{{ url_for('index') }}" class="navbar-brand">MedAssist</a> 
         <div class="search-container">
             <input type="text" placeholder="Search..." class="search-bar">
             <i class="fas fa-search search-icon"></i>
         </div>
         <div class="nav-right">
-            <a href="D:\Github\Techathon-Error404\templates\health_pred.html" class="nav-link">Medical Prediction</a>
+            <a href="{{ url_for('health_pred') }}" class="nav-link">Medical Prediction</a>
             <div class="profile">
                 <img src="https://ui-avatars.com/api/?name=John+Doe" alt="Profile" class="profile-img">
             </div>
@@ -74,6 +74,6 @@
         </div>
     </main>
 
-    <script src="D:\Github\Techathon-Error404\static\js\dashboard.js"></script>
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
 </body>
 </html>

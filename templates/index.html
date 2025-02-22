@@ -5,13 +5,13 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Health App</title>
-    <link rel="stylesheet" href="D:\Github\Techathon-Error404\static\css\style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
   <body>
     <nav class="navbar">
       <a href="#" class="navbar-brand">MedAssist</a>
-    <a href="login.html" class="login-btn">Login</a>
+      <a href="{{ url_for('login') }}" class="login-btn">Login</a>
     </nav>
 
     <main class="main-content">
@@ -33,18 +33,16 @@
           </div>
           <h2 class="service-title">Book Appointments</h2>
           <p class="service-description">Schedule medical appointments quickly and easily with our online booking system.</p>
-            <a href="appointments.html" class="service-link">Book Now</a>
+          <a href="book_appointment.html" class="service-link">Book Now</a>
         </div>
       </div>
       <div class="gif-container">
-        <img src="D:\Github\Techathon-Error404\static\images\home_gif.gif" alt="GIF">
-
-
+        <img src="{{ url_for('static', filename='images/home_gif.gif') }}" alt="GIF">
 
       </div>
       
     </main>
 
-    <script type="module" src="D:\Github\Techathon-Error404\static\js\script.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </body>
 </html>

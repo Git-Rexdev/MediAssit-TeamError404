@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Appointments - Health App</title>
-    <link rel="stylesheet" href="D:\Github\Techathon-Error404\static\css\appointments.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/appointments.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
-        <a href="index.html" class="navbar-brand">Health App</a>
-        <button class="login-btn">Login</button>
+        <a href="{{ url_for('index') }}" class="navbar-brand">MedAssist</a>
+        <a href="{{ url_for('login') }}" class="login-btn">Login</a>
     </nav>
 
     <main class="main-content">
@@ -64,6 +64,6 @@
         </div>
     </main>
 
-    <script src="D:\Github\Techathon-Error404\static\js\appointments.js"></script>
+    <script src="{{ url_for('static', filename='js/appointments.js') }}"></script>
 </body>
 </html>

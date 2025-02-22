@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 from pydantic import BaseModel
 import pandas as pd
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', template_folder='templates')
 
 with open(r'pickle\breast_cancer.pkl', 'rb') as f:
     breast_cancer_pipeline = pickle.load(f)
@@ -28,7 +28,7 @@ def appointments():
 
 @app.route('/book_appointment')
 def book_appointment():
-    return render_template('book_appointment.html')
+    return render_template('book_appointment.html') 
 
 @app.route('/dashboard')
 def dashboard():
