@@ -80,14 +80,16 @@ h2 {
 .disease-card {
     border: 1px solid #e5e7eb;
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding: 1.5rem;
     cursor: pointer;
     transition: all 0.2s ease;
+    background-color: white;
 }
 
 .disease-card:hover {
     border-color: #3b82f6;
     background-color: #eff6ff;
+    transform: translateY(-2px);
 }
 
 .disease-card.selected {
@@ -96,14 +98,15 @@ h2 {
 }
 
 .icon {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 h3 {
     color: #111827;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
 }
 
 p {
@@ -111,7 +114,7 @@ p {
     font-size: 0.875rem;
 }
 
-.input-section, .general-health-form {
+.input-section {
     background-color: white;
     border-radius: 0.5rem;
     padding: 1.5rem;
@@ -125,7 +128,7 @@ p {
 
 .assessment-methods {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
     margin-top: 1.5rem;
 }
@@ -150,19 +153,26 @@ p {
 .form-group {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+}
+
+.radio-group {
+    display: flex;
+    gap: 1rem;
 }
 
 label {
     font-size: 0.875rem;
     color: #374151;
-    margin-bottom: 0.5rem;
+    font-weight: 500;
 }
 
 input, select {
-    padding: 0.5rem;
+    padding: 0.625rem;
     border: 1px solid #d1d5db;
     border-radius: 0.375rem;
     font-size: 1rem;
+    transition: all 0.2s;
 }
 
 input:focus, select:focus {
@@ -177,6 +187,12 @@ input:focus, select:focus {
     padding: 2rem;
     text-align: center;
     margin-bottom: 1rem;
+    transition: all 0.2s;
+}
+
+.file-upload-container:hover {
+    border-color: #3b82f6;
+    background-color: #f8fafc;
 }
 
 .file-input {
@@ -187,54 +203,62 @@ input:focus, select:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
     cursor: pointer;
 }
 
 .file-icon {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .file-info {
-    margin-top: 0.5rem;
+    margin-top: 0.75rem;
     font-size: 0.875rem;
     color: #6b7280;
 }
 
 .image-preview {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     text-align: center;
-}
-
-.image-preview img {
-    max-width: 100%;
-    max-height: 300px;
+    background-color: white;
+    padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.symptoms-section {
-    margin-top: 2rem;
-    border-top: 1px solid #e5e7eb;
-    padding-top: 1.5rem;
+.image-preview img {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-.symptoms-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
+.upload-description {
     margin-top: 1rem;
+    font-size: 0.875rem;
+    color: #4b5563;
+    text-align: left;
 }
 
-.symptom-item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+.upload-description ul {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    list-style-type: disc;
 }
 
-.symptom-item input[type="checkbox"] {
-    width: 1rem;
-    height: 1rem;
+.upload-description li {
+    margin-bottom: 0.25rem;
+}
+
+.additional-info {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .submit-btn {
@@ -244,16 +268,28 @@ input:focus, select:focus {
     border: none;
     border-radius: 0.375rem;
     font-size: 1rem;
+    font-weight: 500;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: all 0.2s;
     width: 100%;
     max-width: 300px;
-    margin: 1rem auto 0;
+    margin: 1.5rem auto 0;
     display: block;
 }
 
 .submit-btn:hover {
     background-color: #2563eb;
+    transform: translateY(-1px);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.error-message {
+    color: #dc2626;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
 }
 
 .hidden {

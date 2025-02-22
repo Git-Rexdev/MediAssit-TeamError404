@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Prediction System</title>
-    <link rel="stylesheet" href="D:\Github\Techathon-Error404\static\css\health_pred.css">
+    <link rel="stylesheet" href="../static/css/health_pred.css">
 </head>
-
 <body>
     <header>
         <h1>Health Prediction System</h1>
         <nav>
             <button id="specific-disease-btn" class="nav-btn active" hidden>Specific Disease Assessment</button>
-            <button id="general-health-btn" class="nav-btn" hidden></button>
+            <button id="general-health-btn" class="nav-btn" hidden>General Health Assessment</button>
         </nav>
     </header>
 
     <main>
-        <!-- Specific Disease Section -->
         <section id="specific-disease-section">
             <section class="disease-selection">
                 <h2>Select Disease Type</h2>
@@ -33,7 +30,6 @@
                         <h3>Diabetes</h3>
                         <p>Analyze blood sugar levels and related health indicators</p>
                     </div>
-                    
                     <div class="disease-card" data-disease="fracture">
                         <div class="icon">🦴</div>
                         <h3>Bone Fracture</h3>
@@ -44,10 +40,10 @@
                         <h3>Cancer</h3>
                         <p>Analyze cancer risk factors and symptoms</p>
                     </div>
-                    <div class="disease-card" data-disease="cancer">
+                    <div class="disease-card" data-disease="brain-tumor">
                         <div class="icon">🧠</div>
-                        <h3>Brain Tumer</h3>
-                        <p>Analyze MRI images for Brain Tumer detection</p>
+                        <h3>Brain Tumor</h3>
+                        <p>Analyze MRI scans for brain tumor detection</p>
                     </div>
                 </div>
             </section>
@@ -64,17 +60,17 @@
                                     <label for="age">Age</label>
                                     <input type="number" id="age" name="age" required>
                                 </div>
-
                                 <div class="form-group">
                                     <label>Gender</label>
-                                    <label>
-                                        <input type="radio" name="gender" value="0" required> Male
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="gender" value="1" required> Female
-                                    </label>
+                                    <div class="radio-group">
+                                        <label>
+                                            <input type="radio" name="gender" value="0" required> Male
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="gender" value="1" required> Female
+                                        </label>
+                                    </div>
                                 </div>
-
                                 <div class="form-group">
                                     <label for="cp-level">CP Level</label>
                                     <input type="number" id="cp-level" name="cp-level" required>
@@ -83,7 +79,6 @@
                                     <label for="threst-bps-level">Trest BPS Level</label>
                                     <input type="number" id="threst-bps-level" name="threst-bps-level" required>
                                 </div>
-
                                 <div class="form-group">
                                     <label for="cholesterol">Cholesterol Level (mg/dL)</label>
                                     <input type="number" id="cholesterol" name="cholesterol" required>
@@ -92,50 +87,8 @@
                                     <label for="fbs">Fasting Blood Sugar Level</label>
                                     <input type="number" id="fbs" name="fbs" required>
                                 </div>
-                                <div class="form-group">
-                                    <label for="restecg">Resting ECG Levels</label>
-                                    <input type="number" id="restecg" name="restecg" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="thalach">Thalach Levels</label>
-                                    <input type="number" id="thalach" name="thalach" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exang">Exang Levels</label>
-                                    <input type="number" id="exang" name="exang" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="oldpeak">Old Peak History Recorded</label>
-                                    <input type="number" id="oldpeak" name="oldpeak" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="slopel">Slope Levels</label>
-                                    <input type="number" id="slopel" name="slopel" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="calev">Coronary Artery Levels</label>
-                                    <input type="number" id="calev" name="calev" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="calev">Thalassemia Level</label>
-                                    <input type="number" id="thal" name="thal" required>
-                                </div>
                             </div>
                             <button type="submit" class="submit-btn">Predict</button>
-                        </div>
-
-                        <div class="file-upload-method">
-                            <h3>Bulk Assessment</h3>
-                            <div class="file-upload-container">
-                                <input type="file" id="heart-file" name="heart-file" accept=".csv,.xlsx"
-                                    class="file-input">
-                                <label for="heart-file" class="file-label">
-                                    <span class="file-icon">📄</span>
-                                    <span>Choose CSV or Excel file</span>
-                                </label>
-                                <p class="file-info">No file chosen</p>
-                            </div>
-                            <button type="submit" class="submit-btn">Analyze File</button>
                         </div>
                     </div>
                 </form>
@@ -146,88 +99,77 @@
                     <div class="assessment-methods">
                         <div class="single-input-method">
                             <h3>Quick Assessment</h3>
-
-                            <div class="form-group">
-                                <label>Gender</label>
-                                <label>
-                                    <input type="radio" name="gender" value="Male" required> Male
-                                </label>
-                                <label>
-                                    <input type="radio" name="gender" value="Female" required> Female
-                                </label>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="age">Age</label>
-                                <input type="number" id="age" name="age" required>
-                            </div>
-                            <label>Hypertension</label>
-                                <label>
-                                    <input type="radio" name="yes" value="1" required> Yes
-                                </label>
-                                <label>
-                                    <input type="radio" name="no" value="0" required> NO
-                                </label>
-                            </div>
-                            <label>Heart Disease</label>
-                                <label>
-                                    <input type="radio" name="yes" value="1" required> Yes
-                                </label>
-                                <label>
-                                    <input type="radio" name="no" value="0" required> NO
-                                </label>
-                            </div>
-                            <div class="form-group">
-                                <label>Smoking History</label><br>
-                                <label>
-                                    <input type="checkbox" name="smoking_history" value="never"> Never
-                                </label>
-                                <label>
-                                    <input type="checkbox" name="smoking_history" value="former"> Former
-                                </label>
-                                <label>
-                                    <input type="checkbox" name="smoking_history" value="current"> Current
-                                </label>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="bmi">BMI</label>
-                                <input type="number" id="bmi" name="bmi" step="0.1" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="insulin">Hemoglobin A1c</label>
-                                <input type="number" id="hba1c" name="hba1c" required>
-                            </div>
-
                             <div class="form-grid">
+                                <div class="form-group">
+                                    <label>Gender</label>
+                                    <div class="radio-group">
+                                        <label>
+                                            <input type="radio" name="gender" value="Male" required> Male
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="gender" value="Female" required> Female
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="age">Age</label>
+                                    <input type="number" id="age" name="age" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Hypertension</label>
+                                    <div class="radio-group">
+                                        <label>
+                                            <input type="radio" name="hypertension" value="1" required> Yes
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="hypertension" value="0" required> No
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Heart Disease</label>
+                                    <div class="radio-group">
+                                        <label>
+                                            <input type="radio" name="heart_disease" value="1" required> Yes
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="heart_disease" value="0" required> No
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Smoking History</label>
+                                    <div class="radio-group">
+                                        <label>
+                                            <input type="radio" name="smoking_history" value="never" required> Never
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="smoking_history" value="former" required> Former
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="smoking_history" value="current" required> Current
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="bmi">BMI</label>
+                                    <input type="number" id="bmi" name="bmi" step="0.1" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="hba1c">HbA1c Level</label>
+                                    <input type="number" id="hba1c" name="hba1c" step="0.1" required>
+                                </div>
                                 <div class="form-group">
                                     <label for="glucose">Glucose Level (mg/dL)</label>
                                     <input type="number" id="glucose" name="glucose" required>
                                 </div>
-                               
-                    
-                            <button type="submit" class="submit-btn">Predict</button>
-                        </div>
-
-                        <div class="file-upload-method">
-                            <h3>Bulk Assessment</h3>
-                            <div class="file-upload-container">
-                                <input type="file" id="diabetes-file" name="diabetes-file" accept=".csv,.xlsx"
-                                    class="file-input">
-                                <label for="diabetes-file" class="file-label">
-                                    <span class="file-icon">📄</span>
-                                    <span>Choose CSV or Excel file</span>
-                                </label>
-                                <p class="file-info">No file chosen</p>
                             </div>
-                            <button type="submit" class="submit-btn">Analyze File</button>
+                            <button type="submit" class="submit-btn">Predict</button>
                         </div>
                     </div>
                 </form>
 
-               
-
-                <!-- Bone Fracture Form -->
+                <!-- Fracture Form -->
                 <form id="fracture-form" class="disease-form hidden">
                     <h2>Bone Fracture Detection</h2>
                     <div class="file-upload-method full-width">
@@ -241,8 +183,8 @@
                             </label>
                             <p class="file-info">No file chosen</p>
                         </div>
-                        <div id="image-preview" class="image-preview hidden">
-                            <img src="" alt="X-ray preview" id="preview-image">
+                        <div id="fracture-preview" class="image-preview hidden">
+                            <img src="" alt="X-ray preview" id="fracture-preview-image">
                         </div>
                         <button type="submit" class="submit-btn">Analyze Image</button>
                     </div>
@@ -256,90 +198,80 @@
                             <h3>Quick Assessment</h3>
                             <div class="form-grid">
                                 <div class="form-group">
-                                    <label for="age-cancer">Clump Thickness</label>
-                                    <input type="number" id="clump-thickness" name="clump-thickness" required>
+                                    <label for="clump-thickness">Clump Thickness</label>
+                                    <input type="number" id="clump-thickness" name="clump-thickness" min="1" max="10" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="smoking">Uniformity of Cell Size</label>
-                                    <input type="number" id="uniformity-of-cell-size" name="uniformity-of-cell-size"  required>
+                                    <label for="uniformity-cell-size">Uniformity of Cell Size</label>
+                                    <input type="number" id="uniformity-cell-size" name="uniformity-cell-size" min="1" max="10" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="smoking">Uniformity of Cell Shape</label>
-                                    <input type="number" id="uniformity-of-cell-shape" name="uniformity-of-cell-shape"  required>
+                                    <label for="uniformity-cell-shape">Uniformity of Cell Shape</label>
+                                    <input type="number" id="uniformity-cell-shape" name="uniformity-cell-shape" min="1" max="10" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="smoking">Marginal Adhesion</label>
-                                    <input type="number" id="marginal-adhesion" name="marginal-adhesion"  required>
+                                    <label for="marginal-adhesion">Marginal Adhesion</label>
+                                    <input type="number" id="marginal-adhesion" name="marginal-adhesion" min="1" max="10" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="smoking">Single Epithelial Cell Size</label>
-                                    <input type="number" id="single-epithelial-cell-size" name="single-epithelial-cell-size"  required>
+                                    <label for="epithelial-cell-size">Single Epithelial Cell Size</label>
+                                    <input type="number" id="epithelial-cell-size" name="epithelial-cell-size" min="1" max="10" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="smoking">Bare Nuclei</label>
-                                    <input type="number" id="bare-nuclei" name="bare-nuclei"  required>
+                                    <label for="bare-nuclei">Bare Nuclei</label>
+                                    <input type="number" id="bare-nuclei" name="bare-nuclei" min="1" max="10" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="smoking">Bland Chromatin</label>
-                                    <input type="number" id="bland chromatin" name="bland-chromatin"  required>
-                                </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="smoking">Normal Nucleoli</label>
-                                    <input type="number" id="normal-nucleoli" name="normal-nucleoli"  required>
+                                    <label for="bland-chromatin">Bland Chromatin</label>
+                                    <input type="number" id="bland-chromatin" name="bland-chromatin" min="1" max="10" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="smoking">Mitoses</label>
-                                    <input type="number" id="mitoses" name="mitoses"  required>
+                                    <label for="normal-nucleoli">Normal Nucleoli</label>
+                                    <input type="number" id="normal-nucleoli" name="normal-nucleoli" min="1" max="10" required>
                                 </div>
-                
-                            <button type="submit" class="submit-btn">Predict</button>
-                        </div>
-
-                        <div class="file-upload-method">
-                            <h3>Bulk Assessment</h3>
-                            <div class="file-upload-container">
-                                <input type="file" id="cancer-file" name="cancer-file" accept=".csv,.xlsx"
-                                    class="file-input">
-                                <label for="cancer-file" class="file-label">
-                                    <span class="file-icon">📄</span>
-                                    <span>Choose CSV or Excel file</span>
-                                </label>
-                                <p class="file-info">No file chosen</p>
+                                <div class="form-group">
+                                    <label for="mitoses">Mitoses</label>
+                                    <input type="number" id="mitoses" name="mitoses" min="1" max="10" required>
+                                </div>
                             </div>
-                            <button type="submit" class="submit-btn">Analyze File</button>
+                            <button type="submit" class="submit-btn">Predict</button>
                         </div>
                     </div>
                 </form>
 
-                          <!-- Brain Tumer Form -->
-                          <form id="fracture-form" class="disease-form hidden">
-                            <h2>Brain Tumer Detection</h2>
-                            <div class="file-upload-method full-width">
-                                <h3>MRI Image Analysis</h3>
-                                <div class="file-upload-container">
-                                    <input type="file" id="fracture-file" name="fracture-file" accept=".jpg,.jpeg,.png"
-                                        class="file-input">
-                                    <label for="fracture-file" class="file-label">
-                                        <span class="file-icon">🖼️</span>
-                                        <span>Upload MRI Image</span>
-                                    </label>
-                                    <p class="file-info">No file chosen</p>
-                                </div>
-                                <div id="image-preview" class="image-preview hidden">
-                                    <img src="" alt="X-ray preview" id="preview-image">
-                                </div>
-                                <button type="submit" class="submit-btn">Analyze Image</button>
-                            </div>
-                        </form>
+                <!-- Brain Tumor Form -->
+                <form id="brain-tumor-form" class="disease-form hidden">
+                    <h2>Brain Tumor Detection</h2>
+                    <div class="file-upload-method full-width">
+                        <h3>MRI Scan Analysis</h3>
+                        <div class="file-upload-container">
+                            <input type="file" id="brain-tumor-file" name="brain-tumor-file" accept=".jpg,.jpeg,.png"
+                                class="file-input">
+                            <label for="brain-tumor-file" class="file-label">
+                                <span class="file-icon">🖼️</span>
+                                <span>Upload MRI Scan Image</span>
+                                <p class="upload-description">
+                                    Please upload a clear MRI scan image. For accurate results:
+                                    <ul>
+                                        <li>Image should be well-lit and focused</li>
+                                        <li>Ensure the scan is recent</li>
+                                        <li>Avoid compressed or low-quality images</li>
+                                    </ul>
+                                </p>
+                            </label>
+                            <p class="file-info">No file chosen</p>
+                        </div>
+                        <div id="brain-tumor-preview" class="image-preview hidden">
+                            <img src="" alt="MRI scan preview" id="brain-tumor-preview-image">
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Analyze Scan</button>
+                    </div>
+                </form>
             </section>
         </section>
-
-        
-
     </main>
 
-    <script src="D:\Github\Techathon-Error404\static\js\health_pred.js"></script>
+    <script src="../static/js/health_pred.js"></script>
 </body>
-
 </html>
