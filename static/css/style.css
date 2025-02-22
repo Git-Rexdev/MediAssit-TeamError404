@@ -123,4 +123,81 @@
     width: 600px;
   }
 
+/* chatbot  */
+
+.open-button {
+  padding: 10px 40px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 17px;
+  max-width: 300px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;  
+}
+.open-button:hover{
+  background-color: var(--secondary-color);
+
+}
+
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  border-radius: 20px;
+  background: #ddd;
+  resize: none;
+  min-height: 200px;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 17px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-container .cancel {
+  background-color: rgb(225, 35, 35);
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 0.8;
+}
+
+#messages { height: 200px; overflow-y: auto; border: 1px solid #e8d1d1; padding: 10px; background: #fff; color: black; }
+.user { text-align: right; color:var(--text-color); }
+.bot { text-align: left; color: rgb(91, 90, 90); }
   
