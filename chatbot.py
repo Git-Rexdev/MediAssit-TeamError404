@@ -52,7 +52,7 @@ def is_medical_question(question):
     "athlete’s foot", "herpes", "chickenpox", "measles", "mumps", "rubella", "malaria",
     "dengue", "chikungunya", "typhoid", "tuberculosis", "hepatitis", "HIV", "AIDS", 
     "syphilis", "gonorrhea", "HPV", "lyme disease", "MRSA", "ebola", "zika virus",
-    "hantavirus", "leptospirosis", "tetanus", "whooping cough", "polio", "rabies",
+    "hantavirus", "leptospirosis", "tetanus", "whooping cough", "polio", "rabies", "COVID-19",
     
     "heart failure", "coronary artery disease", "arrhythmia", "atherosclerosis",
     "cardiomyopathy", "atrial fibrillation", "myocardial infarction", "pulmonary embolism",
