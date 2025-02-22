@@ -1,0 +1,501 @@
+Name,Age,Address,BP Low,BP High,Diabetic,Heart Rate,Temperature,Blood Group,Allergies,Medications,Past Surgeries,Notes,Admitted
+Jessica Thomas,78,"731 Birch Rd, Chicago, GA",78,115,No,75,98.0,O-,None,Insulin,Tonsillectomy,High cholesterol risk,Yes
+Laura Davis,38,"197 Spruce Ln, San Diego, CA",78,110,No,99,97.4,A-,Penicillin,Glipizide,Gallbladder Removal,High cholesterol risk,No
+David Taylor,49,"402 Willow Dr, Philadelphia, FL",78,133,Yes,77,98.5,O+,Latex,Metformin,Appendectomy,Needs diet monitoring,Yes
+Laura Lee,35,"448 Main St, Los Angeles, OH",79,124,No,83,98.4,A-,Sulfa Drugs,Aspirin,Hip Replacement,Needs diet monitoring,Yes
+David Doe,56,"247 Cherry Blvd, San Jose, AZ",83,146,No,80,97.3,O-,Shellfish,Metformin,Gallbladder Removal,High cholesterol risk,Yes
+David Anderson,36,"257 Cedar St, Philadelphia, OH",87,133,Yes,71,97.6,B+,Latex,Aspirin,Bypass Surgery,Mild hypertension,No
+Michael Davis,60,"221 Maple Ave, New York, NY",72,117,Yes,60,98.4,B+,None,Glipizide,Bypass Surgery,High cholesterol risk,No
+Daniel Lee,52,"974 Main St, San Antonio, PA",71,110,Yes,100,99.1,AB+,Penicillin,Lisinopril,Bypass Surgery,Requires low-sodium diet,Yes
+Daniel Davis,52,"132 Main St, New York, IL",86,119,Yes,98,99.7,B-,Pollen,Atorvastatin,None,Mild hypertension,No
+Jessica Lee,63,"985 Oak St, San Diego, NC",74,147,No,92,99.7,B-,None,Metformin,Hip Replacement,Mild hypertension,No
+Laura Doe,63,"444 Main St, New York, PA",74,141,No,91,99.6,B-,Pollen,Lisinopril,Tonsillectomy,High cholesterol risk,No
+Michael Doe,59,"252 Willow Dr, Philadelphia, IL",80,143,No,80,99.0,AB-,Dust,Insulin,Hip Replacement,Mild hypertension,Yes
+Laura Doe,36,"778 Cedar St, Houston, FL",82,125,No,84,99.5,A+,Peanuts,Glipizide,None,Requires low-sodium diet,No
+Jane Martinez,57,"677 Cherry Blvd, Los Angeles, TX",74,114,No,72,97.2,AB-,Penicillin,Atorvastatin,Appendectomy,Needs diet monitoring,No
+David Brown,65,"173 Main St, Dallas, TX",83,146,Yes,60,99.0,B+,Peanuts,None,None,Requires low-sodium diet,No
+Jessica Brown,74,"272 Birch Rd, Dallas, FL",89,145,No,76,97.9,A-,Latex,Insulin,Hip Replacement,Needs diet monitoring,Yes
+Jane Martinez,57,"875 Cherry Blvd, New York, FL",70,114,Yes,71,97.5,AB-,Latex,Aspirin,Gallbladder Removal,Needs diet monitoring,No
+Robert Martinez,69,"774 Cedar St, San Antonio, CA",90,129,No,63,97.6,AB+,None,Insulin,Hip Replacement,Needs diet monitoring,Yes
+Michael Lee,71,"287 Birch Rd, Los Angeles, NY",74,114,Yes,85,97.6,B+,Sulfa Drugs,Aspirin,None,Mild hypertension,Yes
+Jessica Doe,28,"154 Cedar St, Los Angeles, IL",75,110,Yes,66,97.5,AB+,Sulfa Drugs,Atorvastatin,None,Requires low-sodium diet,Yes
+John Wilson,36,"646 Main St, San Diego, PA",75,142,Yes,98,98.2,AB-,Pollen,Lisinopril,Hip Replacement,Mild hypertension,Yes
+Robert Smith,77,"608 Willow Dr, San Antonio, OH",90,147,Yes,77,97.7,B+,Penicillin,Insulin,None,Needs diet monitoring,No
+Laura Lee,76,"843 Spruce Ln, Los Angeles, PA",77,124,No,92,98.5,AB+,Pollen,Aspirin,Gallbladder Removal,Needs regular checkups,Yes
+David Davis,34,"622 Pine St, Philadelphia, NC",74,145,Yes,67,98.2,A+,Shellfish,Insulin,Gallbladder Removal,Needs regular checkups,No
+Michael Doe,58,"661 Main St, San Diego, CA",83,135,No,61,99.3,AB-,Sulfa Drugs,Aspirin,None,High cholesterol risk,Yes
+Michael Brown,58,"497 Oak St, Los Angeles, NY",87,140,Yes,80,100.0,O-,Pollen,Aspirin,Hip Replacement,High cholesterol risk,Yes
+Emily Wilson,28,"544 Spruce Ln, Dallas, GA",85,124,No,71,98.9,B-,None,None,None,High cholesterol risk,Yes
+Laura Taylor,52,"733 Elm St, New York, OH",80,112,Yes,85,99.9,B+,Shellfish,Insulin,Bypass Surgery,Mild hypertension,No
+Jane Brown,43,"939 Cedar St, Phoenix, NY",71,121,Yes,81,97.7,A-,None,Insulin,None,Needs diet monitoring,Yes
+Robert Martinez,45,"230 Main St, San Diego, FL",80,144,No,91,99.2,AB+,Shellfish,Aspirin,Tonsillectomy,Mild hypertension,No
+John Brown,54,"406 Main St, Chicago, PA",83,119,Yes,87,97.1,B-,None,Glipizide,None,Needs regular checkups,No
+David Lee,80,"895 Cherry Blvd, Phoenix, TX",80,140,No,91,99.8,B+,Sulfa Drugs,Glipizide,Gallbladder Removal,Requires low-sodium diet,No
+Emily Smith,55,"384 Willow Dr, San Diego, IL",86,135,Yes,81,97.1,B-,Pollen,None,Appendectomy,Mild hypertension,No
+Robert Smith,45,"549 Oak St, New York, GA",77,134,No,74,98.4,A-,Penicillin,Aspirin,Hip Replacement,Needs diet monitoring,No
+John Thomas,40,"525 Spruce Ln, New York, CA",87,131,No,73,98.2,A+,Pollen,None,Hip Replacement,Needs diet monitoring,Yes
+Daniel Brown,42,"205 Main St, Philadelphia, AZ",75,124,No,88,98.9,A+,Peanuts,Insulin,Appendectomy,Needs regular checkups,No
+John Davis,49,"827 Elm St, San Diego, CA",76,118,No,64,97.5,A-,Peanuts,Atorvastatin,Hip Replacement,Needs regular checkups,Yes
+Sarah Davis,38,"620 Cherry Blvd, Dallas, NY",88,115,No,63,97.8,A+,Sulfa Drugs,None,Appendectomy,High cholesterol risk,No
+Daniel Brown,55,"522 Cedar St, Philadelphia, NC",85,145,No,64,98.6,AB+,Dust,Atorvastatin,Hip Replacement,Needs diet monitoring,No
+Emily Thomas,26,"637 Willow Dr, Chicago, NY",78,147,No,60,97.8,B+,None,Glipizide,Tonsillectomy,Mild hypertension,No
+Robert Davis,37,"947 Cherry Blvd, Philadelphia, NY",88,149,Yes,73,98.9,AB+,Latex,None,None,High cholesterol risk,No
+David Wilson,32,"242 Main St, Houston, NC",74,149,No,82,99.7,B-,Shellfish,Lisinopril,None,Needs diet monitoring,Yes
+Sarah Davis,72,"264 Oak St, New York, TX",76,135,No,97,99.7,B+,None,Aspirin,Gallbladder Removal,Needs diet monitoring,Yes
+David Taylor,59,"505 Cedar St, Chicago, CA",86,128,No,100,99.2,O-,Pollen,Lisinopril,Bypass Surgery,Needs regular checkups,No
+Jessica Wilson,26,"659 Birch Rd, Los Angeles, IL",85,137,No,66,99.2,A-,Dust,Lisinopril,Appendectomy,Requires low-sodium diet,Yes
+John Smith,25,"908 Main St, Los Angeles, NC",81,117,No,76,98.1,A-,Shellfish,None,Bypass Surgery,Requires low-sodium diet,Yes
+Jessica Anderson,69,"662 Oak St, San Antonio, IL",74,118,Yes,72,97.8,AB-,Latex,None,Appendectomy,High cholesterol risk,No
+Daniel Lee,33,"377 Willow Dr, San Jose, IL",87,144,Yes,91,97.9,AB+,Peanuts,None,Hip Replacement,Needs diet monitoring,Yes
+Daniel Lee,57,"109 Maple Ave, Philadelphia, OH",74,126,No,82,97.9,O-,Pollen,Atorvastatin,Tonsillectomy,Requires low-sodium diet,No
+Robert Brown,41,"133 Spruce Ln, San Jose, OH",74,116,No,76,98.4,A-,Shellfish,Atorvastatin,Appendectomy,Requires low-sodium diet,No
+Sarah Anderson,59,"324 Elm St, Dallas, AZ",89,120,Yes,76,99.8,O-,Dust,Lisinopril,Tonsillectomy,Requires low-sodium diet,Yes
+Robert Martinez,75,"272 Oak St, San Diego, IL",72,131,Yes,69,98.2,A+,None,Lisinopril,Appendectomy,High cholesterol risk,Yes
+Daniel Anderson,59,"276 Willow Dr, Houston, AZ",75,142,No,97,98.7,AB-,Penicillin,Aspirin,Hip Replacement,Needs regular checkups,Yes
+Jane Anderson,24,"107 Birch Rd, Houston, TX",77,123,Yes,77,99.1,O-,Peanuts,Glipizide,Gallbladder Removal,Needs regular checkups,No
+David Doe,52,"947 Maple Ave, Chicago, FL",76,116,No,98,98.4,O+,Latex,Glipizide,Hip Replacement,Mild hypertension,No
+Michael Wilson,76,"801 Main St, Houston, NY",87,129,Yes,95,98.4,AB-,Dust,Insulin,Bypass Surgery,Needs regular checkups,Yes
+Sarah Taylor,26,"182 Birch Rd, San Diego, FL",90,114,No,90,97.6,B-,Shellfish,None,Gallbladder Removal,Requires low-sodium diet,Yes
+Jane Anderson,35,"664 Oak St, Phoenix, AZ",73,120,No,89,98.4,AB+,Sulfa Drugs,None,Tonsillectomy,Mild hypertension,Yes
+Sarah Martinez,38,"253 Main St, Los Angeles, FL",88,121,Yes,100,99.8,AB-,Penicillin,None,Tonsillectomy,Mild hypertension,No
+Jessica Anderson,49,"537 Pine St, Phoenix, CA",83,125,No,93,98.6,A+,Sulfa Drugs,Lisinopril,Gallbladder Removal,Needs regular checkups,Yes
+Jessica Doe,43,"517 Oak St, Philadelphia, AZ",81,110,Yes,97,99.6,A-,Dust,None,Hip Replacement,Needs regular checkups,No
+Robert Brown,53,"294 Spruce Ln, Philadelphia, GA",86,147,No,69,98.3,AB-,None,Insulin,Tonsillectomy,Needs diet monitoring,No
+Jane Wilson,80,"788 Spruce Ln, Los Angeles, AZ",77,130,Yes,62,97.3,O-,None,Metformin,Hip Replacement,Needs regular checkups,Yes
+Robert Wilson,73,"743 Spruce Ln, Houston, CA",72,110,No,86,97.8,A-,Pollen,Glipizide,Gallbladder Removal,Mild hypertension,No
+John Thomas,37,"228 Maple Ave, Philadelphia, PA",85,139,No,93,99.7,O-,Shellfish,Lisinopril,Tonsillectomy,Needs diet monitoring,No
+Emily Smith,46,"731 Willow Dr, Philadelphia, CA",84,115,Yes,65,99.1,A-,Peanuts,None,Appendectomy,High cholesterol risk,No
+Michael Taylor,20,"795 Pine St, San Diego, NC",84,121,No,82,99.3,A+,Dust,Atorvastatin,Appendectomy,High cholesterol risk,No
+Laura Lee,36,"112 Main St, Houston, CA",81,132,Yes,73,98.2,AB+,None,None,Bypass Surgery,Requires low-sodium diet,No
+Jane Martinez,28,"994 Willow Dr, Phoenix, NC",71,119,Yes,69,98.0,O+,Latex,Glipizide,Tonsillectomy,High cholesterol risk,No
+Michael Doe,69,"923 Willow Dr, Los Angeles, CA",79,140,Yes,80,97.2,B-,Latex,Metformin,Hip Replacement,High cholesterol risk,No
+Emily Davis,73,"474 Cherry Blvd, Chicago, AZ",83,130,No,69,99.5,B+,Penicillin,Glipizide,Gallbladder Removal,Mild hypertension,Yes
+Emily Martinez,72,"190 Main St, Los Angeles, PA",70,138,No,89,98.0,A+,Peanuts,Insulin,Bypass Surgery,Mild hypertension,No
+Sarah Taylor,50,"596 Pine St, Dallas, FL",82,135,Yes,85,98.2,A-,Peanuts,Aspirin,Bypass Surgery,Needs diet monitoring,Yes
+David Doe,68,"579 Cedar St, San Jose, GA",88,124,No,100,98.6,A-,Sulfa Drugs,None,Appendectomy,Needs regular checkups,Yes
+Sarah Martinez,31,"737 Oak St, Dallas, GA",71,138,No,81,99.2,O-,Penicillin,Atorvastatin,None,Needs regular checkups,Yes
+Laura Davis,25,"752 Main St, New York, PA",76,125,Yes,69,98.3,B-,Pollen,Metformin,Hip Replacement,Mild hypertension,No
+Laura Lee,66,"270 Spruce Ln, Dallas, FL",73,146,No,72,97.1,A-,Pollen,Lisinopril,None,Needs diet monitoring,No
+Robert Brown,41,"763 Elm St, San Antonio, TX",86,123,No,66,99.1,AB+,Pollen,Insulin,None,High cholesterol risk,No
+Robert Lee,43,"126 Pine St, Houston, NC",74,140,No,98,97.4,O+,Pollen,Metformin,Hip Replacement,Needs diet monitoring,No
+Jessica Wilson,40,"791 Maple Ave, Los Angeles, NC",85,133,No,93,98.9,AB-,Pollen,Glipizide,Hip Replacement,Mild hypertension,No
+Michael Smith,24,"857 Willow Dr, Los Angeles, PA",90,115,No,61,99.0,O-,Peanuts,Glipizide,Gallbladder Removal,Mild hypertension,No
+Jessica Doe,46,"739 Main St, Houston, NY",89,148,Yes,78,97.3,B-,None,Insulin,Appendectomy,Needs diet monitoring,No
+Jessica Davis,24,"389 Oak St, Los Angeles, OH",81,143,No,98,97.1,A+,Dust,Lisinopril,Hip Replacement,Requires low-sodium diet,No
+Michael Wilson,28,"665 Cherry Blvd, Houston, NY",78,127,No,94,98.1,A+,Pollen,Lisinopril,Bypass Surgery,Needs diet monitoring,No
+Robert Thomas,61,"784 Elm St, San Jose, CA",74,134,No,76,98.8,AB-,Pollen,Aspirin,Bypass Surgery,Mild hypertension,Yes
+Michael Doe,44,"521 Main St, Philadelphia, FL",83,133,No,66,98.7,A+,Penicillin,Metformin,None,Requires low-sodium diet,Yes
+Sarah Martinez,39,"959 Cherry Blvd, Dallas, NC",86,128,No,73,98.0,A+,Shellfish,Lisinopril,Gallbladder Removal,Needs regular checkups,No
+Daniel Anderson,54,"566 Main St, San Diego, OH",81,129,No,73,98.1,O-,Pollen,Metformin,None,Mild hypertension,No
+Sarah Martinez,33,"506 Main St, Houston, FL",79,128,No,100,99.2,B+,Peanuts,Aspirin,None,Needs regular checkups,No
+John Thomas,30,"356 Cedar St, Chicago, CA",84,148,Yes,93,99.9,A-,Dust,Atorvastatin,Appendectomy,Needs regular checkups,Yes
+Jane Lee,36,"990 Birch Rd, Dallas, CA",71,144,Yes,74,99.9,B-,Peanuts,Insulin,Gallbladder Removal,High cholesterol risk,No
+Sarah Lee,47,"253 Cherry Blvd, Philadelphia, IL",88,140,No,86,98.6,B-,Penicillin,Insulin,Hip Replacement,Requires low-sodium diet,Yes
+Robert Wilson,74,"258 Cedar St, San Jose, AZ",85,131,Yes,65,99.2,O-,Latex,Lisinopril,Gallbladder Removal,Requires low-sodium diet,Yes
+Michael Anderson,53,"249 Cherry Blvd, Phoenix, NY",71,123,Yes,62,99.4,O-,Dust,Metformin,Hip Replacement,High cholesterol risk,No
+Emily Doe,22,"894 Maple Ave, Chicago, CA",79,127,Yes,64,98.2,A-,Pollen,Atorvastatin,None,Needs regular checkups,Yes
+John Thomas,68,"246 Oak St, San Antonio, AZ",84,110,Yes,79,99.3,A-,Peanuts,Lisinopril,None,Needs regular checkups,Yes
+Robert Thomas,57,"640 Cherry Blvd, Phoenix, CA",83,127,Yes,92,98.9,B+,Penicillin,Atorvastatin,Hip Replacement,Needs diet monitoring,Yes
+Michael Martinez,66,"855 Elm St, Philadelphia, CA",76,121,No,86,98.4,O-,Dust,Metformin,Bypass Surgery,Needs diet monitoring,Yes
+Emily Martinez,38,"772 Spruce Ln, Chicago, CA",82,140,No,99,99.2,B-,Dust,Insulin,Tonsillectomy,Needs diet monitoring,No
+Laura Smith,69,"318 Cherry Blvd, Philadelphia, OH",72,127,Yes,82,99.5,O+,Shellfish,Insulin,None,Needs diet monitoring,No
+Robert Anderson,24,"862 Spruce Ln, Dallas, FL",71,116,Yes,66,98.1,O-,None,None,Bypass Surgery,Requires low-sodium diet,Yes
+Robert Wilson,29,"759 Main St, Chicago, NY",82,116,Yes,69,99.1,AB-,Latex,Metformin,Gallbladder Removal,Requires low-sodium diet,Yes
+Robert Wilson,79,"664 Maple Ave, Houston, AZ",79,138,No,68,97.4,O-,Sulfa Drugs,Lisinopril,None,Needs regular checkups,Yes
+John Doe,54,"745 Cedar St, San Antonio, TX",77,122,Yes,68,99.0,AB+,Latex,None,Tonsillectomy,Requires low-sodium diet,Yes
+Emily Taylor,52,"836 Spruce Ln, Houston, GA",79,131,No,75,99.5,A-,Peanuts,None,Tonsillectomy,Requires low-sodium diet,No
+Jane Lee,51,"375 Spruce Ln, New York, TX",74,131,No,88,98.9,B-,Dust,Atorvastatin,Gallbladder Removal,Needs regular checkups,Yes
+Michael Wilson,53,"966 Birch Rd, San Diego, PA",75,121,Yes,100,99.9,O+,Pollen,Insulin,Hip Replacement,Mild hypertension,Yes
+Daniel Lee,75,"791 Main St, San Jose, TX",83,142,Yes,92,99.8,O+,Shellfish,Aspirin,Appendectomy,High cholesterol risk,No
+Robert Thomas,48,"942 Cherry Blvd, Houston, NY",77,126,Yes,75,97.5,B+,Pollen,Atorvastatin,Bypass Surgery,Requires low-sodium diet,Yes
+David Doe,21,"750 Birch Rd, Los Angeles, NY",76,116,No,61,98.4,AB-,Pollen,Insulin,Gallbladder Removal,High cholesterol risk,Yes
+Jessica Smith,41,"651 Birch Rd, San Diego, IL",74,145,No,96,98.8,O+,Shellfish,Aspirin,Bypass Surgery,Requires low-sodium diet,No
+Jessica Taylor,41,"238 Oak St, San Diego, NY",79,144,Yes,60,99.3,O+,Dust,Insulin,None,Needs diet monitoring,No
+Sarah Davis,40,"538 Birch Rd, Los Angeles, FL",88,110,Yes,91,98.2,A+,None,Atorvastatin,Bypass Surgery,High cholesterol risk,Yes
+Robert Martinez,69,"621 Pine St, Dallas, NY",86,113,Yes,75,97.0,O+,Peanuts,Atorvastatin,Tonsillectomy,Needs regular checkups,Yes
+Jane Lee,75,"675 Maple Ave, San Antonio, AZ",80,139,Yes,67,97.5,A+,Dust,Insulin,Bypass Surgery,High cholesterol risk,Yes
+Daniel Thomas,79,"750 Oak St, San Diego, IL",89,124,Yes,75,97.4,AB+,None,Lisinopril,Tonsillectomy,High cholesterol risk,Yes
+Sarah Martinez,41,"956 Oak St, Chicago, OH",75,126,No,79,98.1,A+,Dust,Metformin,Appendectomy,Needs diet monitoring,Yes
+Sarah Taylor,35,"799 Elm St, Chicago, NY",72,123,Yes,94,99.7,AB-,Latex,Glipizide,Hip Replacement,Needs diet monitoring,Yes
+John Martinez,49,"463 Birch Rd, Phoenix, NC",79,142,Yes,90,99.7,O-,Pollen,None,None,Needs diet monitoring,No
+John Davis,49,"420 Main St, San Jose, PA",73,124,No,87,99.8,A+,Peanuts,Glipizide,Gallbladder Removal,Needs regular checkups,No
+David Wilson,62,"102 Cedar St, San Antonio, PA",81,132,Yes,63,99.5,AB-,Sulfa Drugs,Insulin,Bypass Surgery,Needs regular checkups,No
+John Lee,21,"304 Main St, Chicago, NC",88,129,Yes,88,98.1,O-,Shellfish,Aspirin,Gallbladder Removal,Needs diet monitoring,No
+Robert Davis,40,"102 Spruce Ln, San Antonio, PA",79,141,No,71,98.3,B+,Penicillin,Metformin,None,High cholesterol risk,Yes
+Jessica Wilson,51,"625 Elm St, Phoenix, TX",89,124,No,83,97.1,O+,Latex,Metformin,Gallbladder Removal,Requires low-sodium diet,Yes
+David Wilson,27,"523 Birch Rd, San Jose, TX",85,146,Yes,68,99.4,B+,Shellfish,Atorvastatin,Hip Replacement,Needs regular checkups,Yes
+Robert Brown,20,"448 Spruce Ln, Dallas, GA",85,132,Yes,93,99.4,O+,Dust,Lisinopril,Appendectomy,Needs regular checkups,Yes
+Jane Brown,29,"253 Spruce Ln, Chicago, NY",80,144,No,98,98.4,B+,Sulfa Drugs,Aspirin,Bypass Surgery,Needs regular checkups,Yes
+Emily Smith,53,"891 Cherry Blvd, Houston, AZ",83,150,No,73,98.0,B+,Latex,Aspirin,None,Mild hypertension,No
+Robert Wilson,59,"224 Pine St, San Antonio, NC",79,145,Yes,84,97.5,A+,Peanuts,Insulin,Tonsillectomy,High cholesterol risk,No
+Daniel Brown,56,"376 Spruce Ln, New York, FL",78,121,Yes,90,97.8,O+,Pollen,Aspirin,Hip Replacement,High cholesterol risk,Yes
+Emily Lee,50,"281 Cherry Blvd, Philadelphia, IL",84,139,Yes,75,97.6,B+,Sulfa Drugs,Insulin,Bypass Surgery,Needs regular checkups,No
+Robert Martinez,57,"972 Elm St, Chicago, GA",85,129,Yes,91,98.9,AB+,Sulfa Drugs,Lisinopril,Tonsillectomy,High cholesterol risk,No
+Robert Lee,54,"935 Main St, New York, NC",85,141,Yes,76,99.5,O-,Shellfish,Metformin,Tonsillectomy,Requires low-sodium diet,No
+Laura Doe,69,"925 Spruce Ln, Phoenix, NY",70,141,No,63,97.1,B+,None,None,Bypass Surgery,Needs diet monitoring,No
+John Brown,65,"540 Spruce Ln, San Jose, CA",85,140,No,78,99.5,A+,Latex,None,Tonsillectomy,Mild hypertension,Yes
+Emily Brown,35,"427 Pine St, Philadelphia, FL",73,140,Yes,71,97.8,B-,Shellfish,Metformin,Gallbladder Removal,Requires low-sodium diet,Yes
+Daniel Brown,72,"858 Oak St, Philadelphia, CA",79,120,Yes,100,99.6,AB+,Pollen,Insulin,Bypass Surgery,Needs regular checkups,Yes
+Laura Taylor,67,"551 Maple Ave, New York, FL",75,129,No,80,99.0,O-,Peanuts,Aspirin,Tonsillectomy,Needs diet monitoring,Yes
+Emily Taylor,52,"530 Spruce Ln, San Jose, TX",87,140,No,66,99.7,O+,Latex,Glipizide,Appendectomy,Mild hypertension,No
+David Brown,54,"386 Elm St, Los Angeles, PA",83,139,No,60,97.1,O+,Pollen,Glipizide,Hip Replacement,High cholesterol risk,No
+Daniel Lee,44,"379 Willow Dr, Los Angeles, CA",84,140,Yes,97,98.9,O-,Penicillin,Aspirin,Gallbladder Removal,High cholesterol risk,Yes
+David Brown,61,"494 Willow Dr, Houston, CA",76,144,No,80,97.3,O-,Sulfa Drugs,Lisinopril,Tonsillectomy,Requires low-sodium diet,No
+Robert Davis,71,"692 Main St, San Antonio, CA",74,143,Yes,77,98.2,O-,Sulfa Drugs,Insulin,Bypass Surgery,Needs diet monitoring,No
+David Anderson,25,"773 Cherry Blvd, San Diego, NY",71,148,Yes,70,99.3,O-,Dust,Metformin,Appendectomy,Needs regular checkups,No
+Jane Brown,57,"707 Main St, San Diego, IL",74,140,Yes,94,97.7,AB+,None,Metformin,None,Requires low-sodium diet,Yes
+Michael Smith,28,"343 Birch Rd, Los Angeles, NC",79,141,No,64,98.4,B+,Dust,None,Tonsillectomy,Requires low-sodium diet,Yes
+Jane Anderson,21,"186 Pine St, San Antonio, CA",86,113,Yes,74,97.9,AB-,None,Atorvastatin,None,High cholesterol risk,Yes
+Daniel Martinez,25,"649 Birch Rd, Philadelphia, CA",72,142,No,95,99.9,A+,Peanuts,Lisinopril,Tonsillectomy,Requires low-sodium diet,Yes
+Sarah Davis,39,"126 Cedar St, Los Angeles, CA",80,131,Yes,90,98.7,O-,Sulfa Drugs,None,Gallbladder Removal,Mild hypertension,No
+David Davis,50,"645 Cedar St, San Jose, NC",71,129,Yes,68,99.1,O-,None,Metformin,Tonsillectomy,Needs diet monitoring,Yes
+Jessica Lee,48,"799 Cherry Blvd, San Jose, FL",75,132,Yes,83,99.7,O-,Dust,Insulin,Hip Replacement,Needs diet monitoring,Yes
+Jessica Lee,48,"936 Spruce Ln, San Antonio, TX",89,132,Yes,83,98.6,O+,Penicillin,Glipizide,Appendectomy,Mild hypertension,Yes
+Emily Brown,54,"699 Willow Dr, Chicago, PA",86,122,No,97,97.6,B+,Latex,Metformin,None,Needs diet monitoring,No
+John Brown,42,"112 Pine St, Philadelphia, GA",78,133,Yes,69,97.4,O-,Dust,Aspirin,Tonsillectomy,High cholesterol risk,Yes
+Jessica Taylor,49,"986 Spruce Ln, San Antonio, AZ",81,150,Yes,68,98.9,O+,Sulfa Drugs,Aspirin,None,Mild hypertension,No
+Robert Taylor,44,"481 Willow Dr, Los Angeles, NC",73,143,Yes,77,98.7,B+,Penicillin,Aspirin,Bypass Surgery,Requires low-sodium diet,No
+David Wilson,49,"104 Oak St, Philadelphia, IL",81,148,No,93,99.5,O+,Latex,Lisinopril,Gallbladder Removal,Mild hypertension,No
+Robert Martinez,64,"248 Main St, Dallas, IL",85,117,No,98,98.8,B+,Penicillin,Insulin,Hip Replacement,High cholesterol risk,No
+Laura Anderson,51,"283 Spruce Ln, San Antonio, NY",88,113,Yes,76,99.3,A-,Sulfa Drugs,Atorvastatin,Hip Replacement,Needs diet monitoring,Yes
+John Wilson,39,"244 Spruce Ln, San Jose, NY",86,147,No,98,97.3,A-,None,None,Gallbladder Removal,Needs regular checkups,No
+Jessica Thomas,57,"409 Willow Dr, San Antonio, PA",74,110,Yes,69,99.2,B-,Penicillin,Glipizide,Hip Replacement,Needs regular checkups,No
+Jessica Martinez,46,"501 Cedar St, Los Angeles, AZ",84,148,Yes,71,97.1,AB+,None,Glipizide,Gallbladder Removal,Requires low-sodium diet,Yes
+Emily Thomas,25,"867 Cherry Blvd, San Diego, NY",73,119,No,72,98.4,O-,Shellfish,None,Gallbladder Removal,Needs diet monitoring,Yes
+John Taylor,80,"769 Cherry Blvd, Phoenix, FL",87,118,No,68,99.5,A-,Shellfish,Aspirin,Tonsillectomy,Needs diet monitoring,Yes
+David Smith,77,"616 Oak St, Los Angeles, TX",90,133,No,92,97.6,O-,Peanuts,Glipizide,Bypass Surgery,Needs diet monitoring,Yes
+Jane Taylor,22,"332 Maple Ave, Los Angeles, FL",89,134,Yes,93,99.4,O+,Pollen,Atorvastatin,Tonsillectomy,Needs regular checkups,No
+Emily Martinez,71,"687 Pine St, San Jose, AZ",90,132,No,92,98.7,AB-,Peanuts,Atorvastatin,Bypass Surgery,Mild hypertension,Yes
+Daniel Smith,51,"165 Maple Ave, Philadelphia, FL",71,128,No,64,97.7,O-,Penicillin,Insulin,Appendectomy,Needs regular checkups,No
+Sarah Wilson,28,"103 Cherry Blvd, Dallas, PA",90,117,Yes,86,100.0,A+,Latex,Insulin,Gallbladder Removal,Mild hypertension,Yes
+Laura Doe,68,"557 Maple Ave, San Diego, FL",80,141,No,93,98.2,A+,None,None,Gallbladder Removal,Requires low-sodium diet,No
+Sarah Wilson,61,"660 Spruce Ln, San Jose, NC",89,127,Yes,83,99.4,O+,Dust,Lisinopril,Bypass Surgery,Needs diet monitoring,No
+John Brown,39,"480 Birch Rd, San Diego, GA",72,120,Yes,89,97.1,O-,Latex,None,Appendectomy,Needs diet monitoring,Yes
+Robert Taylor,67,"124 Willow Dr, Dallas, OH",78,139,No,90,99.7,AB+,None,None,Gallbladder Removal,Needs diet monitoring,Yes
+Daniel Smith,64,"285 Pine St, San Antonio, IL",89,140,Yes,94,97.9,B-,Penicillin,Aspirin,Gallbladder Removal,Needs diet monitoring,No
+Michael Lee,62,"164 Birch Rd, Houston, OH",88,128,Yes,67,97.4,AB-,Sulfa Drugs,Insulin,Tonsillectomy,High cholesterol risk,Yes
+Jane Martinez,60,"215 Maple Ave, Chicago, NY",85,124,Yes,79,97.0,A+,Dust,Lisinopril,Appendectomy,Needs regular checkups,Yes
+Robert Doe,80,"752 Pine St, Phoenix, NY",89,115,Yes,64,99.8,A-,None,Glipizide,Tonsillectomy,High cholesterol risk,Yes
+Sarah Wilson,77,"181 Maple Ave, Phoenix, AZ",71,124,No,62,99.3,A+,Dust,None,Hip Replacement,Mild hypertension,No
+Emily Taylor,31,"888 Elm St, Houston, NY",90,138,Yes,72,98.8,A+,None,Atorvastatin,Tonsillectomy,Requires low-sodium diet,No
+Emily Martinez,73,"337 Birch Rd, San Jose, FL",87,149,Yes,89,97.2,AB+,Dust,Aspirin,Bypass Surgery,Mild hypertension,Yes
+Jessica Davis,75,"132 Cedar St, Philadelphia, TX",78,145,Yes,91,97.6,A-,Latex,Metformin,Bypass Surgery,Mild hypertension,Yes
+David Taylor,22,"514 Birch Rd, Philadelphia, PA",81,116,Yes,85,99.9,O-,Sulfa Drugs,Atorvastatin,Hip Replacement,Needs regular checkups,No
+Michael Davis,34,"561 Oak St, Philadelphia, TX",85,133,No,74,97.4,O+,Peanuts,Glipizide,Bypass Surgery,High cholesterol risk,Yes
+David Anderson,24,"716 Maple Ave, Los Angeles, TX",71,112,Yes,78,99.2,AB+,Latex,Aspirin,Hip Replacement,Needs diet monitoring,No
+Robert Brown,21,"954 Pine St, Houston, FL",88,111,Yes,85,98.1,B-,Dust,Glipizide,Tonsillectomy,Needs diet monitoring,No
+Sarah Wilson,67,"176 Elm St, Dallas, IL",79,116,No,73,97.1,AB+,Peanuts,None,Tonsillectomy,Requires low-sodium diet,No
+Emily Taylor,54,"415 Spruce Ln, Phoenix, PA",74,129,No,69,98.8,AB+,Dust,Insulin,Bypass Surgery,High cholesterol risk,Yes
+Jane Taylor,66,"600 Birch Rd, San Antonio, CA",87,114,Yes,76,97.2,O-,None,None,None,High cholesterol risk,Yes
+David Brown,40,"918 Elm St, New York, IL",89,133,Yes,100,99.6,A-,Latex,Insulin,Gallbladder Removal,Needs diet monitoring,No
+Daniel Martinez,39,"491 Cherry Blvd, Houston, AZ",81,133,No,61,97.4,AB-,Latex,Metformin,Hip Replacement,High cholesterol risk,No
+Jane Davis,71,"986 Maple Ave, Chicago, AZ",74,123,No,70,98.5,AB-,Latex,Lisinopril,None,Requires low-sodium diet,Yes
+Emily Davis,24,"275 Main St, Phoenix, TX",83,129,Yes,72,99.0,A+,Peanuts,Metformin,Bypass Surgery,Needs diet monitoring,Yes
+Robert Martinez,39,"538 Pine St, Los Angeles, OH",90,114,No,90,99.2,A+,Sulfa Drugs,Lisinopril,Appendectomy,Mild hypertension,No
+Jane Lee,56,"297 Cherry Blvd, Philadelphia, AZ",90,121,No,78,99.1,A-,Latex,Atorvastatin,Tonsillectomy,High cholesterol risk,Yes
+Michael Lee,54,"172 Spruce Ln, Houston, GA",78,149,No,73,98.9,O+,Penicillin,Atorvastatin,None,Needs regular checkups,Yes
+Daniel Anderson,62,"684 Spruce Ln, Chicago, NC",78,135,No,100,98.7,AB-,Peanuts,None,Hip Replacement,High cholesterol risk,No
+Daniel Doe,71,"239 Cherry Blvd, San Jose, NC",86,120,Yes,70,99.7,A-,Penicillin,Metformin,Tonsillectomy,Requires low-sodium diet,Yes
+Daniel Doe,29,"803 Maple Ave, San Diego, OH",83,123,Yes,95,98.4,A+,None,Atorvastatin,Bypass Surgery,Mild hypertension,No
+Jane Thomas,80,"169 Pine St, Houston, GA",86,141,No,97,97.5,A-,Dust,Metformin,Gallbladder Removal,Requires low-sodium diet,Yes
+Laura Martinez,59,"922 Pine St, Philadelphia, TX",70,139,No,98,99.1,B+,Sulfa Drugs,Atorvastatin,Bypass Surgery,Mild hypertension,No
+Emily Brown,55,"184 Main St, San Antonio, NY",90,143,Yes,67,98.8,B+,Peanuts,Lisinopril,Hip Replacement,High cholesterol risk,Yes
+Laura Lee,62,"699 Spruce Ln, San Antonio, FL",70,136,No,67,98.9,B+,Pollen,Atorvastatin,Appendectomy,Needs diet monitoring,Yes
+John Anderson,48,"396 Cherry Blvd, San Antonio, FL",74,110,No,68,99.0,B-,Peanuts,Metformin,Tonsillectomy,High cholesterol risk,No
+Sarah Davis,53,"735 Cherry Blvd, San Jose, TX",84,123,No,79,99.1,B+,None,Atorvastatin,None,Mild hypertension,No
+Sarah Anderson,52,"519 Spruce Ln, Chicago, TX",83,135,No,69,99.9,A-,Sulfa Drugs,None,Gallbladder Removal,High cholesterol risk,Yes
+Jane Smith,71,"585 Cedar St, Philadelphia, FL",78,139,No,79,99.0,B-,Pollen,Atorvastatin,Appendectomy,Requires low-sodium diet,Yes
+Laura Wilson,77,"833 Spruce Ln, San Diego, OH",78,140,No,100,99.6,O+,Peanuts,Metformin,None,High cholesterol risk,Yes
+Emily Brown,58,"656 Spruce Ln, San Antonio, NC",74,134,No,72,97.0,AB+,Peanuts,Atorvastatin,Tonsillectomy,Requires low-sodium diet,No
+Jane Martinez,39,"110 Cedar St, San Antonio, GA",74,139,No,98,98.4,O+,Latex,None,Bypass Surgery,High cholesterol risk,No
+Emily Anderson,21,"470 Willow Dr, Phoenix, IL",79,145,Yes,65,99.8,AB+,Penicillin,Lisinopril,Gallbladder Removal,High cholesterol risk,No
+Jane Thomas,22,"633 Pine St, Philadelphia, AZ",86,110,No,61,97.2,O+,Peanuts,Atorvastatin,Bypass Surgery,Needs regular checkups,No
+David Brown,34,"939 Willow Dr, Los Angeles, CA",71,133,Yes,91,99.2,AB-,Shellfish,None,None,Needs diet monitoring,No
+Jessica Doe,47,"633 Spruce Ln, Dallas, FL",71,147,No,62,97.1,A-,Penicillin,None,Tonsillectomy,Requires low-sodium diet,Yes
+Laura Lee,26,"135 Cedar St, San Jose, OH",76,132,No,94,98.8,AB+,Shellfish,Insulin,Hip Replacement,Needs diet monitoring,No
+David Brown,57,"825 Maple Ave, San Diego, IL",71,131,Yes,78,98.3,O-,Sulfa Drugs,None,Tonsillectomy,High cholesterol risk,No
+Laura Smith,47,"947 Spruce Ln, New York, GA",76,121,No,92,99.0,AB+,None,None,Gallbladder Removal,Mild hypertension,Yes
+Daniel Brown,39,"887 Cherry Blvd, San Antonio, IL",82,130,No,84,99.3,AB+,Dust,Atorvastatin,Appendectomy,Needs diet monitoring,Yes
+David Wilson,54,"902 Cedar St, Los Angeles, OH",79,150,No,68,98.7,A-,Penicillin,Aspirin,Appendectomy,Needs regular checkups,No
+John Taylor,75,"667 Spruce Ln, San Antonio, FL",87,129,Yes,87,98.5,A+,Pollen,Aspirin,Hip Replacement,Requires low-sodium diet,No
+John Brown,21,"256 Pine St, New York, GA",79,118,No,84,97.9,A-,Latex,Glipizide,Tonsillectomy,Requires low-sodium diet,No
+John Davis,21,"590 Spruce Ln, Chicago, AZ",77,128,No,86,97.4,B+,Peanuts,Atorvastatin,Gallbladder Removal,Mild hypertension,No
+Daniel Wilson,75,"511 Willow Dr, San Jose, NC",85,123,Yes,100,98.7,B-,Peanuts,Metformin,Hip Replacement,Needs diet monitoring,No
+David Smith,67,"539 Elm St, San Diego, NC",85,133,No,75,100.0,O+,Sulfa Drugs,Metformin,Bypass Surgery,Needs diet monitoring,No
+Robert Brown,68,"224 Birch Rd, New York, PA",90,133,No,69,97.8,A+,Latex,Glipizide,Tonsillectomy,Needs regular checkups,Yes
+Laura Wilson,77,"803 Maple Ave, Houston, OH",74,119,No,92,97.9,AB+,Peanuts,None,Bypass Surgery,Mild hypertension,No
+Sarah Thomas,20,"286 Cedar St, Houston, FL",88,140,Yes,65,99.2,B+,None,Lisinopril,Bypass Surgery,Mild hypertension,Yes
+Robert Wilson,27,"609 Maple Ave, San Antonio, OH",83,116,Yes,86,99.6,A+,Pollen,Glipizide,Appendectomy,Requires low-sodium diet,No
+Robert Thomas,38,"518 Oak St, New York, NC",70,144,No,95,97.8,O+,Pollen,Atorvastatin,None,Requires low-sodium diet,No
+Jane Martinez,79,"722 Elm St, San Jose, TX",81,145,No,80,98.0,AB-,Shellfish,Aspirin,None,Mild hypertension,No
+David Wilson,36,"550 Birch Rd, Phoenix, IL",90,111,Yes,99,99.9,O+,Shellfish,Lisinopril,Gallbladder Removal,Needs diet monitoring,No
+Laura Lee,64,"968 Cedar St, San Jose, NY",76,144,Yes,67,98.4,AB-,Sulfa Drugs,None,Appendectomy,Mild hypertension,Yes
+Jessica Lee,66,"913 Cedar St, Philadelphia, PA",74,147,Yes,92,98.4,A+,Sulfa Drugs,Atorvastatin,Bypass Surgery,Mild hypertension,Yes
+Laura Davis,20,"338 Maple Ave, Dallas, AZ",79,130,Yes,64,99.3,A-,Latex,Insulin,None,Mild hypertension,Yes
+Robert Anderson,77,"316 Pine St, Los Angeles, OH",87,136,Yes,69,98.6,A+,Shellfish,None,None,Needs diet monitoring,Yes
+Jane Brown,80,"861 Birch Rd, San Jose, PA",81,123,No,87,99.4,B+,Peanuts,Atorvastatin,Hip Replacement,Needs regular checkups,Yes
+Jane Wilson,63,"142 Oak St, San Antonio, FL",79,146,Yes,97,99.0,AB-,Pollen,None,Tonsillectomy,Requires low-sodium diet,No
+Jane Davis,45,"247 Birch Rd, Philadelphia, AZ",79,143,No,98,97.7,B-,Penicillin,None,Hip Replacement,Requires low-sodium diet,Yes
+Laura Lee,71,"978 Cedar St, San Diego, IL",70,116,Yes,72,98.7,A+,Penicillin,Insulin,Appendectomy,Requires low-sodium diet,Yes
+Laura Doe,65,"437 Spruce Ln, Los Angeles, IL",85,111,Yes,66,99.3,AB+,Penicillin,Glipizide,Bypass Surgery,High cholesterol risk,No
+Emily Smith,68,"851 Willow Dr, Dallas, NC",72,134,No,73,98.5,AB-,Shellfish,None,Bypass Surgery,High cholesterol risk,No
+Laura Martinez,42,"938 Maple Ave, New York, TX",74,129,No,95,97.5,O+,None,Lisinopril,Hip Replacement,Mild hypertension,Yes
+Robert Thomas,36,"917 Cherry Blvd, Houston, FL",84,125,Yes,73,98.2,AB+,Shellfish,Aspirin,Appendectomy,Mild hypertension,No
+Michael Wilson,33,"339 Elm St, San Diego, TX",72,120,No,61,99.8,AB+,Peanuts,Insulin,Gallbladder Removal,Requires low-sodium diet,No
+Jane Taylor,79,"544 Birch Rd, Phoenix, FL",70,135,Yes,84,99.5,O+,Penicillin,Insulin,Tonsillectomy,Mild hypertension,No
+Jessica Anderson,49,"947 Elm St, Los Angeles, OH",82,110,No,71,98.9,A+,Shellfish,Lisinopril,Bypass Surgery,Needs diet monitoring,No
+Robert Anderson,63,"668 Pine St, Dallas, FL",89,128,Yes,60,99.4,O+,Peanuts,Glipizide,None,Requires low-sodium diet,No
+David Doe,23,"672 Maple Ave, Phoenix, OH",74,150,Yes,94,98.7,AB+,None,Aspirin,Bypass Surgery,Mild hypertension,No
+Daniel Wilson,32,"943 Pine St, Dallas, GA",84,146,No,61,98.1,O+,Latex,Metformin,Tonsillectomy,High cholesterol risk,No
+Michael Lee,68,"713 Oak St, Houston, NC",72,117,No,82,99.7,B+,Penicillin,Lisinopril,Gallbladder Removal,High cholesterol risk,No
+Jessica Anderson,72,"266 Willow Dr, Dallas, OH",72,148,No,66,98.9,O+,Latex,Insulin,None,Needs diet monitoring,No
+David Brown,56,"226 Elm St, San Jose, TX",80,111,No,72,98.6,B+,None,None,Gallbladder Removal,Mild hypertension,Yes
+Daniel Davis,23,"986 Birch Rd, Los Angeles, IL",85,125,No,73,97.4,O+,None,Glipizide,Appendectomy,Needs diet monitoring,Yes
+Jane Brown,60,"988 Main St, New York, AZ",75,126,Yes,76,99.2,O-,Dust,None,Gallbladder Removal,Requires low-sodium diet,Yes
+John Anderson,73,"681 Maple Ave, Philadelphia, OH",83,125,Yes,80,99.9,A+,Sulfa Drugs,Insulin,Hip Replacement,Mild hypertension,No
+Jane Taylor,70,"895 Pine St, San Antonio, PA",77,142,No,86,99.5,AB-,Peanuts,Aspirin,Gallbladder Removal,Needs diet monitoring,Yes
+Emily Wilson,31,"299 Elm St, San Antonio, NY",86,137,No,89,97.4,AB+,Shellfish,Atorvastatin,Tonsillectomy,High cholesterol risk,No
+Michael Wilson,25,"535 Pine St, Los Angeles, CA",72,117,No,71,99.8,A+,Dust,Lisinopril,Gallbladder Removal,Needs diet monitoring,Yes
+Laura Martinez,76,"852 Pine St, San Diego, CA",72,139,No,99,98.2,B+,Penicillin,Aspirin,Gallbladder Removal,High cholesterol risk,Yes
+John Doe,27,"846 Cherry Blvd, New York, PA",81,141,Yes,89,98.7,O+,Latex,None,Hip Replacement,Needs regular checkups,Yes
+John Taylor,48,"541 Oak St, Phoenix, CA",77,118,No,76,97.0,AB+,Peanuts,Glipizide,Hip Replacement,High cholesterol risk,No
+Sarah Doe,36,"228 Birch Rd, San Antonio, FL",81,141,No,82,97.4,A+,Peanuts,Insulin,Appendectomy,High cholesterol risk,Yes
+Laura Martinez,34,"939 Elm St, Los Angeles, NY",86,119,Yes,60,97.6,A+,Shellfish,Aspirin,Tonsillectomy,Needs regular checkups,Yes
+Laura Taylor,41,"679 Cedar St, Chicago, OH",90,148,No,66,98.4,AB-,None,Aspirin,Appendectomy,Needs diet monitoring,Yes
+John Taylor,64,"712 Cedar St, Los Angeles, GA",81,134,Yes,87,99.3,O-,Peanuts,Lisinopril,Gallbladder Removal,Needs diet monitoring,No
+Laura Brown,67,"585 Main St, Phoenix, TX",71,149,Yes,66,99.3,B+,Shellfish,Atorvastatin,Bypass Surgery,Needs regular checkups,No
+Laura Anderson,40,"180 Willow Dr, Los Angeles, NC",84,149,Yes,99,97.4,O+,Dust,Metformin,Bypass Surgery,Needs diet monitoring,Yes
+Jane Doe,25,"697 Spruce Ln, Philadelphia, CA",89,112,No,78,99.3,A+,Peanuts,Atorvastatin,Tonsillectomy,Requires low-sodium diet,No
+Jane Wilson,28,"119 Birch Rd, Los Angeles, CA",79,144,No,66,99.1,A-,Penicillin,None,Tonsillectomy,High cholesterol risk,Yes
+Laura Smith,73,"280 Cedar St, Phoenix, GA",83,145,No,76,98.0,B-,Latex,Atorvastatin,None,Mild hypertension,No
+Robert Lee,72,"160 Main St, Philadelphia, CA",85,132,Yes,64,99.9,O-,None,Lisinopril,Tonsillectomy,Needs regular checkups,No
+Jessica Martinez,61,"105 Main St, Phoenix, AZ",71,123,No,72,97.8,A-,Peanuts,Glipizide,Appendectomy,Needs regular checkups,Yes
+Sarah Doe,78,"612 Cherry Blvd, Phoenix, GA",73,141,No,72,97.1,AB+,Sulfa Drugs,None,None,High cholesterol risk,Yes
+David Brown,67,"358 Cedar St, San Diego, IL",70,131,No,97,97.8,O+,Peanuts,Lisinopril,None,Needs regular checkups,Yes
+Michael Thomas,30,"103 Main St, San Antonio, FL",84,147,No,69,98.3,O+,Penicillin,Glipizide,None,High cholesterol risk,Yes
+Michael Anderson,36,"305 Oak St, Phoenix, TX",85,137,Yes,63,97.9,AB-,Pollen,Metformin,Appendectomy,Requires low-sodium diet,Yes
+Laura Anderson,58,"237 Cherry Blvd, Houston, OH",79,120,No,72,98.4,A-,Latex,Lisinopril,None,Needs diet monitoring,No
+Michael Wilson,28,"816 Birch Rd, Dallas, CA",81,126,Yes,91,97.4,B-,Latex,Insulin,Hip Replacement,Requires low-sodium diet,No
+Jane Thomas,41,"295 Oak St, San Jose, NC",84,137,No,87,99.5,B-,Sulfa Drugs,Lisinopril,Bypass Surgery,Mild hypertension,No
+David Brown,80,"614 Cedar St, Dallas, GA",89,133,No,69,97.1,AB-,Dust,Lisinopril,None,Needs diet monitoring,No
+Sarah Doe,29,"690 Pine St, Dallas, GA",71,136,No,87,99.1,A+,Pollen,Aspirin,None,Needs regular checkups,No
+Jane Martinez,71,"413 Cherry Blvd, Phoenix, PA",70,110,No,75,98.5,B-,Latex,Glipizide,Bypass Surgery,Mild hypertension,No
+Michael Thomas,25,"873 Spruce Ln, Phoenix, AZ",78,147,No,75,98.7,A+,Pollen,Metformin,Bypass Surgery,Needs diet monitoring,No
+John Lee,41,"667 Elm St, San Antonio, GA",87,128,No,77,98.0,AB-,Sulfa Drugs,Glipizide,None,Needs regular checkups,Yes
+Jessica Smith,67,"673 Elm St, Los Angeles, AZ",71,115,No,95,99.2,B-,Sulfa Drugs,Atorvastatin,Hip Replacement,Needs regular checkups,No
+Daniel Doe,67,"983 Pine St, Los Angeles, TX",85,130,Yes,73,97.4,O+,Dust,Aspirin,Appendectomy,Needs diet monitoring,No
+David Brown,33,"398 Maple Ave, San Diego, PA",76,147,No,92,99.3,A-,Sulfa Drugs,Atorvastatin,Tonsillectomy,Needs diet monitoring,No
+Daniel Thomas,42,"483 Elm St, San Diego, NY",78,113,No,76,97.3,AB-,Shellfish,Aspirin,Bypass Surgery,Requires low-sodium diet,No
+Laura Wilson,72,"504 Oak St, San Jose, OH",86,142,No,69,98.6,B-,Dust,Atorvastatin,Appendectomy,High cholesterol risk,No
+Robert Smith,66,"100 Main St, New York, IL",70,126,Yes,78,99.1,A-,None,Metformin,Bypass Surgery,Needs diet monitoring,No
+Michael Lee,73,"169 Cedar St, Chicago, CA",80,149,Yes,88,97.2,AB+,None,Metformin,Bypass Surgery,High cholesterol risk,No
+Emily Martinez,29,"523 Main St, Phoenix, CA",76,117,Yes,87,97.4,A+,Pollen,Glipizide,Appendectomy,Requires low-sodium diet,Yes
+Daniel Taylor,33,"130 Birch Rd, Philadelphia, GA",82,125,No,63,99.2,O+,Pollen,Glipizide,Bypass Surgery,High cholesterol risk,Yes
+Jessica Wilson,78,"852 Willow Dr, Houston, TX",74,127,Yes,70,97.3,O-,Sulfa Drugs,None,None,Needs diet monitoring,No
+Daniel Wilson,24,"703 Cherry Blvd, Phoenix, NC",90,143,Yes,90,97.6,O+,Pollen,Aspirin,Appendectomy,Needs regular checkups,No
+Michael Doe,77,"871 Main St, San Jose, CA",71,118,Yes,75,98.9,AB-,Sulfa Drugs,None,Tonsillectomy,Needs regular checkups,Yes
+Jessica Thomas,74,"142 Pine St, Chicago, FL",76,143,No,83,98.1,B-,Penicillin,Insulin,Gallbladder Removal,Needs diet monitoring,No
+Laura Smith,30,"332 Cedar St, Philadelphia, IL",83,123,No,100,97.5,B-,Shellfish,Insulin,Hip Replacement,High cholesterol risk,Yes
+Michael Martinez,78,"184 Cedar St, Dallas, GA",76,141,Yes,63,99.1,B+,Penicillin,Glipizide,Bypass Surgery,Needs diet monitoring,Yes
+Robert Thomas,52,"229 Elm St, Chicago, NC",83,146,Yes,62,99.0,AB-,Pollen,Lisinopril,Hip Replacement,Requires low-sodium diet,Yes
+Emily Brown,78,"317 Cherry Blvd, Los Angeles, CA",84,140,No,93,97.2,A+,Penicillin,Glipizide,Gallbladder Removal,Needs diet monitoring,Yes
+Daniel Lee,77,"724 Cherry Blvd, Chicago, IL",82,117,Yes,82,98.9,B-,Peanuts,Atorvastatin,Appendectomy,Mild hypertension,Yes
+Jessica Smith,49,"169 Cedar St, San Antonio, AZ",85,145,Yes,68,98.1,B-,Peanuts,Glipizide,None,Needs diet monitoring,Yes
+Laura Doe,32,"816 Pine St, Chicago, IL",79,139,No,96,97.8,O+,Sulfa Drugs,Insulin,Tonsillectomy,Requires low-sodium diet,No
+Daniel Davis,54,"500 Willow Dr, Houston, PA",72,126,No,67,97.8,O+,Latex,Aspirin,None,Requires low-sodium diet,Yes
+Emily Taylor,43,"398 Cedar St, Houston, IL",84,135,No,67,99.8,A-,Latex,Aspirin,None,Needs diet monitoring,No
+Jane Smith,48,"327 Cherry Blvd, Los Angeles, GA",72,113,No,89,99.1,B-,None,Aspirin,Tonsillectomy,Mild hypertension,Yes
+Jane Anderson,59,"785 Willow Dr, San Diego, NY",74,139,Yes,64,99.5,A-,Dust,Metformin,None,High cholesterol risk,No
+Robert Doe,80,"661 Spruce Ln, Philadelphia, IL",72,131,No,99,99.0,A-,Peanuts,Insulin,Hip Replacement,Needs diet monitoring,Yes
+Emily Thomas,49,"477 Birch Rd, San Diego, NY",87,128,No,66,99.4,A+,Latex,Metformin,Appendectomy,Needs regular checkups,Yes
+Daniel Wilson,50,"445 Elm St, San Antonio, OH",74,126,Yes,67,98.1,A-,Latex,Metformin,Tonsillectomy,High cholesterol risk,No
+David Smith,40,"212 Oak St, Los Angeles, CA",78,113,No,61,98.7,AB-,Sulfa Drugs,Lisinopril,Gallbladder Removal,Needs regular checkups,Yes
+Laura Taylor,70,"800 Cherry Blvd, Los Angeles, PA",87,130,No,85,97.4,O+,Pollen,Lisinopril,None,Needs diet monitoring,No
+Daniel Taylor,20,"412 Oak St, San Jose, GA",74,139,No,79,98.6,O-,Pollen,Glipizide,Tonsillectomy,Needs diet monitoring,Yes
+Emily Doe,20,"967 Oak St, Phoenix, PA",76,120,Yes,60,97.8,O-,Shellfish,None,Gallbladder Removal,Needs diet monitoring,No
+Michael Smith,42,"303 Cherry Blvd, San Antonio, FL",79,114,Yes,69,99.3,B-,Dust,Atorvastatin,Hip Replacement,Requires low-sodium diet,No
+Robert Taylor,48,"339 Main St, Chicago, TX",78,116,Yes,65,97.2,O-,Shellfish,Insulin,Gallbladder Removal,Needs diet monitoring,Yes
+Laura Doe,62,"849 Willow Dr, Phoenix, FL",88,122,No,85,98.3,B-,Penicillin,Glipizide,Appendectomy,Needs diet monitoring,Yes
+Laura Doe,71,"979 Willow Dr, San Jose, NC",74,147,Yes,82,98.6,B-,None,Aspirin,Gallbladder Removal,Needs diet monitoring,No
+Sarah Taylor,40,"291 Main St, Chicago, PA",71,147,Yes,85,97.4,AB-,Latex,Metformin,Gallbladder Removal,Needs regular checkups,Yes
+Jane Lee,54,"279 Willow Dr, Phoenix, OH",90,129,Yes,95,98.7,O-,Sulfa Drugs,Insulin,None,Mild hypertension,No
+Sarah Brown,28,"386 Willow Dr, Houston, AZ",88,120,Yes,61,98.0,A+,None,Glipizide,Gallbladder Removal,High cholesterol risk,Yes
+John Wilson,73,"810 Maple Ave, Dallas, AZ",80,117,Yes,72,99.9,AB-,Latex,Metformin,Bypass Surgery,Needs diet monitoring,Yes
+Jane Brown,62,"727 Birch Rd, San Jose, TX",76,116,Yes,96,98.2,AB-,None,Aspirin,Hip Replacement,Mild hypertension,No
+John Taylor,35,"590 Elm St, New York, NY",83,115,No,90,99.3,AB-,Peanuts,Atorvastatin,None,Requires low-sodium diet,No
+Emily Smith,32,"999 Cedar St, San Diego, NY",71,117,No,98,98.9,A-,Penicillin,Insulin,Tonsillectomy,Requires low-sodium diet,Yes
+Robert Smith,52,"661 Cherry Blvd, Dallas, IL",79,144,Yes,86,98.0,O+,Latex,Atorvastatin,Hip Replacement,High cholesterol risk,Yes
+Sarah Smith,30,"732 Spruce Ln, Phoenix, NC",77,138,Yes,81,97.3,B+,Sulfa Drugs,None,Gallbladder Removal,High cholesterol risk,Yes
+Jessica Davis,41,"878 Birch Rd, New York, TX",72,118,Yes,71,99.4,B-,Latex,None,Appendectomy,Needs diet monitoring,No
+Michael Davis,68,"975 Cherry Blvd, San Diego, CA",83,122,No,78,99.1,AB+,None,None,Appendectomy,Needs diet monitoring,Yes
+Jane Smith,61,"507 Oak St, Phoenix, GA",81,147,No,75,99.4,A-,None,Lisinopril,Appendectomy,High cholesterol risk,No
+Michael Lee,29,"460 Pine St, San Jose, IL",85,124,Yes,64,97.1,A-,Peanuts,Atorvastatin,Bypass Surgery,Needs regular checkups,Yes
+Sarah Martinez,72,"149 Main St, San Diego, FL",75,123,Yes,83,98.8,AB-,Dust,Aspirin,Hip Replacement,Requires low-sodium diet,Yes
+Robert Anderson,20,"413 Pine St, San Antonio, CA",86,139,Yes,92,97.2,AB-,Pollen,None,Hip Replacement,Requires low-sodium diet,No
+David Martinez,49,"194 Elm St, San Diego, AZ",78,137,No,99,99.2,B-,Sulfa Drugs,Lisinopril,Gallbladder Removal,Mild hypertension,Yes
+Laura Brown,68,"994 Cedar St, Philadelphia, PA",83,116,No,81,98.0,O+,Penicillin,None,Hip Replacement,Requires low-sodium diet,Yes
+John Anderson,28,"967 Cedar St, Dallas, IL",89,118,Yes,69,97.4,O-,Sulfa Drugs,Glipizide,Tonsillectomy,Needs diet monitoring,Yes
+Sarah Thomas,66,"709 Cedar St, Philadelphia, CA",72,139,No,91,98.7,O-,Pollen,None,Gallbladder Removal,Needs regular checkups,Yes
+Laura Anderson,53,"192 Cherry Blvd, Philadelphia, NC",73,118,No,97,100.0,AB+,Dust,None,Bypass Surgery,High cholesterol risk,No
+John Taylor,70,"400 Birch Rd, San Jose, FL",89,139,No,93,97.6,O-,Peanuts,Atorvastatin,None,Mild hypertension,Yes
+Michael Anderson,55,"420 Maple Ave, New York, OH",74,132,No,81,98.1,AB+,Dust,Lisinopril,Appendectomy,Requires low-sodium diet,Yes
+Laura Thomas,45,"641 Cherry Blvd, San Jose, FL",83,146,No,76,98.6,A+,Shellfish,None,Bypass Surgery,Needs regular checkups,No
+Laura Doe,52,"644 Elm St, San Jose, IL",75,111,No,95,98.6,B-,None,Aspirin,Hip Replacement,High cholesterol risk,Yes
+Robert Anderson,58,"836 Maple Ave, Philadelphia, OH",82,115,Yes,82,98.7,AB-,Latex,Glipizide,Hip Replacement,Mild hypertension,Yes
+Daniel Martinez,55,"876 Willow Dr, San Diego, OH",76,122,No,86,97.9,A+,Sulfa Drugs,Insulin,Bypass Surgery,Needs diet monitoring,No
+Emily Martinez,37,"852 Birch Rd, San Diego, OH",90,114,Yes,63,99.0,O-,Pollen,Lisinopril,Tonsillectomy,Needs regular checkups,No
+Michael Anderson,76,"944 Oak St, Philadelphia, NC",71,126,No,67,98.1,B+,Shellfish,Aspirin,Appendectomy,Needs diet monitoring,Yes
+Jessica Smith,28,"838 Maple Ave, San Antonio, NC",75,122,Yes,82,97.4,O-,Sulfa Drugs,Lisinopril,Gallbladder Removal,Needs diet monitoring,No
+Laura Wilson,54,"894 Spruce Ln, Phoenix, NY",70,124,Yes,60,97.3,A+,Peanuts,None,Gallbladder Removal,Mild hypertension,No
+John Thomas,80,"391 Birch Rd, New York, IL",86,130,No,70,98.7,O+,Shellfish,None,Appendectomy,Needs diet monitoring,Yes
+Laura Thomas,33,"729 Main St, Philadelphia, OH",74,141,No,81,98.4,O+,Dust,Insulin,None,Needs diet monitoring,Yes
+Jessica Brown,34,"964 Cherry Blvd, Houston, AZ",83,147,Yes,63,97.5,B-,Latex,Insulin,None,Mild hypertension,No
+Michael Thomas,45,"704 Oak St, San Diego, IL",83,123,No,60,97.6,O+,Dust,Metformin,Gallbladder Removal,Needs diet monitoring,Yes
+Laura Lee,65,"340 Cedar St, San Antonio, IL",87,110,Yes,75,99.5,AB-,Penicillin,Insulin,Tonsillectomy,Mild hypertension,Yes
+Robert Taylor,65,"123 Oak St, Philadelphia, FL",88,140,Yes,87,99.1,B+,Penicillin,Metformin,Appendectomy,High cholesterol risk,No
+John Doe,41,"294 Oak St, Dallas, OH",71,122,Yes,100,99.5,O+,Shellfish,Glipizide,Gallbladder Removal,High cholesterol risk,No
+Jane Wilson,52,"367 Pine St, Philadelphia, AZ",83,135,Yes,70,98.4,B-,Shellfish,Metformin,Hip Replacement,High cholesterol risk,Yes
+Jane Martinez,29,"980 Oak St, San Antonio, CA",89,150,Yes,77,99.3,B+,None,Insulin,None,High cholesterol risk,No
+Jessica Thomas,73,"704 Spruce Ln, San Antonio, AZ",83,131,No,81,98.7,O-,None,Metformin,Gallbladder Removal,Mild hypertension,No
+Laura Smith,43,"371 Cherry Blvd, Dallas, IL",85,129,Yes,72,97.6,AB+,None,Aspirin,Bypass Surgery,Needs diet monitoring,Yes
+John Doe,49,"469 Pine St, San Jose, IL",89,140,Yes,90,97.5,A-,Latex,Atorvastatin,Tonsillectomy,Needs regular checkups,No
+Jessica Brown,24,"341 Spruce Ln, San Jose, PA",72,137,Yes,87,97.6,O+,Latex,None,Appendectomy,High cholesterol risk,No
+Laura Davis,76,"238 Elm St, Los Angeles, GA",84,131,No,81,98.9,AB-,Sulfa Drugs,Atorvastatin,None,Needs regular checkups,Yes
+Laura Wilson,74,"894 Spruce Ln, Chicago, GA",78,149,No,90,98.8,A+,Latex,None,Bypass Surgery,Needs regular checkups,No
+Emily Martinez,25,"384 Spruce Ln, San Antonio, NC",74,118,No,71,97.8,AB-,Penicillin,None,Tonsillectomy,High cholesterol risk,Yes
+Jessica Martinez,20,"710 Elm St, San Diego, NC",71,114,Yes,94,99.1,B+,Pollen,Aspirin,None,Needs regular checkups,Yes
+John Anderson,68,"339 Willow Dr, Chicago, PA",71,112,Yes,93,98.0,A-,Pollen,Aspirin,Appendectomy,Needs regular checkups,No
+Emily Smith,65,"882 Maple Ave, New York, CA",76,113,No,61,99.6,AB-,Pollen,Lisinopril,Appendectomy,Requires low-sodium diet,No
+Robert Anderson,27,"143 Elm St, Phoenix, GA",83,134,Yes,72,98.2,B+,Penicillin,Insulin,None,Requires low-sodium diet,Yes
+Daniel Anderson,36,"305 Willow Dr, San Diego, NY",71,131,No,100,98.3,A+,None,Atorvastatin,Bypass Surgery,Requires low-sodium diet,No
+John Taylor,72,"208 Cedar St, Dallas, TX",72,114,Yes,96,99.6,O+,Pollen,Aspirin,Gallbladder Removal,High cholesterol risk,No
+David Doe,72,"928 Cedar St, New York, FL",84,140,No,86,98.9,A-,Dust,None,Tonsillectomy,High cholesterol risk,No
+Laura Thomas,63,"864 Spruce Ln, San Antonio, CA",81,148,No,90,98.8,A-,None,None,Appendectomy,Needs diet monitoring,Yes
+Jessica Wilson,39,"818 Maple Ave, Phoenix, OH",76,145,Yes,62,98.0,O+,Latex,Lisinopril,Hip Replacement,Needs regular checkups,Yes
+Daniel Smith,37,"864 Maple Ave, Phoenix, GA",83,146,Yes,73,97.1,O+,Latex,Atorvastatin,Tonsillectomy,Mild hypertension,No
+Michael Wilson,53,"323 Main St, San Jose, PA",81,148,No,91,97.6,AB+,Penicillin,Aspirin,None,Needs diet monitoring,Yes
+Daniel Davis,66,"791 Maple Ave, New York, OH",76,150,Yes,88,99.0,AB-,Shellfish,Atorvastatin,Bypass Surgery,Requires low-sodium diet,No
+Daniel Doe,57,"586 Spruce Ln, New York, PA",78,127,No,67,98.9,AB-,None,Lisinopril,Bypass Surgery,Needs diet monitoring,Yes
+Robert Thomas,55,"964 Main St, San Diego, NY",87,144,No,95,99.1,O-,Sulfa Drugs,Metformin,Bypass Surgery,High cholesterol risk,Yes
+Daniel Thomas,21,"193 Willow Dr, Chicago, TX",82,136,Yes,69,97.4,A+,Dust,Aspirin,Appendectomy,High cholesterol risk,No
+Emily Thomas,23,"211 Maple Ave, Dallas, NY",90,124,No,83,97.7,B+,Dust,None,Tonsillectomy,High cholesterol risk,Yes
+Laura Wilson,28,"326 Maple Ave, New York, AZ",87,130,Yes,88,98.4,A+,Dust,Metformin,Gallbladder Removal,Needs diet monitoring,Yes
+Daniel Wilson,77,"222 Spruce Ln, Los Angeles, OH",81,127,No,68,97.6,A+,None,Metformin,Tonsillectomy,High cholesterol risk,No
+Sarah Anderson,78,"985 Willow Dr, Los Angeles, FL",75,115,No,86,99.8,O+,Peanuts,Atorvastatin,Tonsillectomy,High cholesterol risk,No
+Jane Brown,42,"956 Willow Dr, Phoenix, NC",77,141,No,60,98.3,B+,None,Aspirin,Gallbladder Removal,Requires low-sodium diet,Yes
+Daniel Brown,52,"140 Spruce Ln, Dallas, CA",82,120,No,71,97.3,A-,Peanuts,Metformin,Tonsillectomy,High cholesterol risk,No
+Daniel Wilson,32,"834 Cherry Blvd, Dallas, GA",74,122,Yes,61,97.8,O+,Peanuts,Insulin,Tonsillectomy,Requires low-sodium diet,Yes
+Jessica Anderson,60,"461 Cedar St, San Diego, CA",79,134,Yes,66,97.3,AB+,Dust,Insulin,Hip Replacement,High cholesterol risk,Yes
+Laura Anderson,51,"293 Main St, Chicago, GA",71,143,Yes,76,99.0,B+,Dust,Atorvastatin,Appendectomy,Mild hypertension,No
+Daniel Smith,67,"593 Birch Rd, Phoenix, TX",83,125,Yes,67,97.4,O-,Peanuts,Insulin,None,High cholesterol risk,Yes
+Laura Lee,67,"320 Maple Ave, Phoenix, AZ",74,115,Yes,84,97.3,B+,Dust,Glipizide,Tonsillectomy,Needs regular checkups,No
+Michael Smith,52,"766 Main St, San Jose, NY",87,122,Yes,75,99.0,B+,Latex,Glipizide,Tonsillectomy,High cholesterol risk,Yes
+David Smith,45,"160 Cherry Blvd, Houston, CA",73,142,Yes,89,98.5,A-,Dust,Aspirin,Appendectomy,Mild hypertension,No
+John Lee,77,"878 Cedar St, Houston, OH",77,127,No,64,98.8,A-,Peanuts,None,Appendectomy,Needs diet monitoring,No
+Laura Lee,56,"979 Main St, Phoenix, GA",75,118,Yes,91,99.9,A+,Shellfish,Atorvastatin,Appendectomy,Needs regular checkups,No
+Emily Thomas,51,"591 Pine St, Houston, PA",90,142,Yes,96,97.5,A-,Pollen,Metformin,Hip Replacement,Requires low-sodium diet,Yes
+Sarah Wilson,49,"700 Willow Dr, Chicago, GA",72,126,No,92,98.1,A+,Pollen,Lisinopril,Gallbladder Removal,Mild hypertension,Yes
+Jessica Brown,39,"807 Spruce Ln, Chicago, PA",72,141,Yes,95,98.9,AB-,Latex,Glipizide,Gallbladder Removal,Mild hypertension,No
+Sarah Martinez,41,"838 Elm St, San Antonio, AZ",82,118,Yes,66,97.8,AB-,Peanuts,None,Appendectomy,Needs regular checkups,No
+Daniel Thomas,58,"528 Main St, Phoenix, GA",81,119,No,87,99.4,O-,Sulfa Drugs,Insulin,None,High cholesterol risk,Yes
+John Davis,60,"382 Main St, San Diego, PA",73,126,No,78,99.1,B-,Latex,Glipizide,Tonsillectomy,High cholesterol risk,No
+John Taylor,43,"277 Main St, Chicago, IL",76,132,Yes,91,99.6,A+,Dust,Glipizide,Appendectomy,Requires low-sodium diet,No
+Jane Lee,76,"524 Willow Dr, San Antonio, FL",78,132,No,87,99.9,O+,Penicillin,Lisinopril,Hip Replacement,High cholesterol risk,Yes
+Emily Anderson,24,"941 Spruce Ln, Phoenix, NY",77,127,No,60,98.8,O+,None,Glipizide,Tonsillectomy,Needs regular checkups,No
+Daniel Taylor,52,"505 Willow Dr, Philadelphia, NY",73,110,Yes,74,99.2,A+,Shellfish,None,Bypass Surgery,Mild hypertension,Yes
+Michael Doe,72,"938 Pine St, San Diego, NC",76,136,Yes,71,98.4,AB+,Shellfish,Glipizide,Gallbladder Removal,Needs diet monitoring,Yes
+Emily Thomas,20,"738 Birch Rd, San Antonio, FL",86,131,No,95,98.8,B+,Latex,Metformin,Tonsillectomy,Needs diet monitoring,No
+Michael Anderson,35,"168 Elm St, San Diego, NC",90,130,Yes,77,98.9,AB-,Sulfa Drugs,Metformin,Gallbladder Removal,Needs diet monitoring,Yes
+Michael Brown,45,"124 Spruce Ln, Chicago, NY",79,135,Yes,97,99.1,O-,Dust,Aspirin,Bypass Surgery,Requires low-sodium diet,No
+Daniel Doe,77,"556 Birch Rd, New York, NC",87,112,Yes,70,98.4,B+,Peanuts,Aspirin,Appendectomy,High cholesterol risk,No
+Daniel Anderson,61,"184 Birch Rd, San Diego, IL",79,126,Yes,85,99.6,AB-,Shellfish,Aspirin,None,Needs diet monitoring,Yes
+Jessica Davis,52,"971 Main St, Dallas, NC",81,115,No,75,97.6,B+,Pollen,Atorvastatin,Gallbladder Removal,Needs diet monitoring,No
+Jessica Wilson,70,"572 Pine St, Los Angeles, FL",72,139,No,98,99.7,AB-,Peanuts,Insulin,Bypass Surgery,Needs regular checkups,No
+John Doe,50,"719 Cedar St, Phoenix, AZ",75,115,Yes,97,98.1,O+,Pollen,None,Tonsillectomy,High cholesterol risk,Yes
+John Anderson,33,"207 Willow Dr, San Antonio, FL",71,132,No,77,99.8,O+,Penicillin,Metformin,Bypass Surgery,High cholesterol risk,No
+David Martinez,77,"317 Maple Ave, Dallas, PA",72,132,Yes,94,98.8,AB-,None,None,Tonsillectomy,Requires low-sodium diet,Yes
+Michael Wilson,56,"160 Maple Ave, San Antonio, NC",86,130,No,99,99.5,A-,None,Glipizide,Appendectomy,Requires low-sodium diet,No
+John Brown,69,"496 Pine St, Phoenix, FL",72,112,Yes,60,99.1,O+,None,Insulin,Appendectomy,High cholesterol risk,No
+Jessica Taylor,46,"628 Cherry Blvd, New York, CA",90,150,Yes,76,98.1,AB+,Shellfish,Atorvastatin,None,Mild hypertension,Yes
+Sarah Wilson,80,"843 Oak St, San Diego, TX",70,147,Yes,79,99.0,AB-,Pollen,Lisinopril,Hip Replacement,Mild hypertension,Yes
+Emily Lee,33,"175 Spruce Ln, San Antonio, CA",82,149,No,67,98.3,B+,Shellfish,None,None,Needs diet monitoring,No
+Emily Anderson,25,"189 Spruce Ln, New York, GA",74,140,No,95,98.5,O-,Sulfa Drugs,Lisinopril,Bypass Surgery,Requires low-sodium diet,Yes
+Jane Smith,68,"979 Cedar St, San Jose, IL",79,129,Yes,66,98.7,O-,Sulfa Drugs,None,Gallbladder Removal,High cholesterol risk,Yes
+Jane Lee,67,"976 Oak St, Chicago, GA",73,140,No,74,98.1,O+,None,Atorvastatin,Hip Replacement,Needs regular checkups,Yes
+Emily Anderson,76,"337 Maple Ave, Phoenix, GA",80,112,Yes,90,98.6,AB+,Peanuts,Aspirin,None,Needs regular checkups,Yes
+Daniel Wilson,24,"321 Willow Dr, Dallas, NY",80,111,Yes,68,98.2,B+,Latex,Aspirin,Hip Replacement,High cholesterol risk,Yes
+Jessica Doe,63,"187 Cedar St, New York, OH",88,135,No,87,99.5,B+,Shellfish,Atorvastatin,Appendectomy,Needs regular checkups,Yes
+Jessica Martinez,41,"951 Willow Dr, Los Angeles, NY",73,127,No,86,99.0,B-,None,Glipizide,Hip Replacement,High cholesterol risk,No
+John Davis,80,"943 Elm St, San Diego, TX",75,135,Yes,89,98.7,AB+,Latex,Metformin,Appendectomy,Needs regular checkups,No
+John Lee,56,"917 Maple Ave, Los Angeles, FL",84,118,No,65,99.3,B+,Latex,Atorvastatin,None,High cholesterol risk,Yes
+Michael Anderson,30,"730 Oak St, New York, NC",78,114,No,75,99.8,B+,Peanuts,Insulin,Tonsillectomy,Needs diet monitoring,Yes
+Robert Lee,73,"755 Birch Rd, Los Angeles, TX",75,136,No,70,98.9,A-,Dust,Lisinopril,Bypass Surgery,Mild hypertension,No
+John Smith,30,"259 Pine St, Los Angeles, NC",90,111,No,100,99.3,O+,Latex,Insulin,Gallbladder Removal,Needs diet monitoring,No
+Jessica Davis,71,"914 Maple Ave, San Diego, PA",70,146,No,69,98.7,AB-,Shellfish,Insulin,Gallbladder Removal,Requires low-sodium diet,Yes
+Michael Wilson,44,"519 Maple Ave, New York, TX",82,132,No,85,97.3,AB-,Peanuts,Lisinopril,Tonsillectomy,Needs diet monitoring,No
+Robert Wilson,40,"685 Maple Ave, New York, PA",83,149,Yes,67,98.9,B-,Sulfa Drugs,Insulin,Hip Replacement,Requires low-sodium diet,Yes
+Robert Wilson,55,"272 Willow Dr, San Diego, GA",77,137,No,89,97.5,B-,Pollen,Glipizide,Gallbladder Removal,High cholesterol risk,Yes
+Emily Taylor,50,"896 Willow Dr, Phoenix, NY",82,129,Yes,76,99.5,O+,None,Lisinopril,Bypass Surgery,Requires low-sodium diet,No
+Laura Wilson,56,"680 Spruce Ln, Phoenix, GA",77,113,Yes,81,99.8,A+,Shellfish,Metformin,Bypass Surgery,Mild hypertension,Yes
+John Thomas,51,"422 Cherry Blvd, Los Angeles, PA",80,139,Yes,60,99.3,A-,Peanuts,Aspirin,Appendectomy,Needs diet monitoring,No
+Jane Brown,20,"465 Maple Ave, Los Angeles, NC",71,122,No,69,97.4,B-,None,None,Bypass Surgery,Needs regular checkups,Yes
+Jessica Davis,26,"322 Elm St, Phoenix, AZ",82,132,Yes,92,98.4,B+,Pollen,Insulin,Gallbladder Removal,High cholesterol risk,No
+Daniel Wilson,20,"273 Willow Dr, Dallas, NY",82,145,Yes,72,97.1,A-,Pollen,Metformin,Appendectomy,Requires low-sodium diet,No
+Jessica Davis,27,"936 Cherry Blvd, Chicago, NC",76,132,Yes,70,99.5,AB+,Pollen,Aspirin,Tonsillectomy,Mild hypertension,Yes
+Michael Taylor,38,"798 Elm St, Philadelphia, IL",71,143,No,77,97.6,B-,Shellfish,Aspirin,Bypass Surgery,Mild hypertension,No
+Daniel Anderson,41,"705 Willow Dr, Philadelphia, OH",71,117,No,68,99.7,O-,Shellfish,Metformin,None,Needs regular checkups,No
+Michael Taylor,67,"494 Maple Ave, New York, CA",72,146,No,63,98.3,A+,Shellfish,None,Bypass Surgery,Needs diet monitoring,No
+David Martinez,37,"283 Cherry Blvd, Los Angeles, CA",78,115,No,69,99.6,AB-,Dust,Insulin,Gallbladder Removal,Mild hypertension,No
+Michael Davis,67,"746 Main St, San Diego, PA",80,115,Yes,72,99.2,B-,Latex,Atorvastatin,Gallbladder Removal,Needs regular checkups,Yes
+John Anderson,45,"794 Pine St, New York, IL",70,145,No,70,97.7,AB-,Peanuts,Insulin,Hip Replacement,Requires low-sodium diet,Yes
+David Thomas,25,"628 Birch Rd, Houston, TX",78,131,Yes,80,99.1,A-,Latex,Aspirin,None,Mild hypertension,No
+Michael Thomas,80,"208 Oak St, Phoenix, NC",88,125,No,94,99.4,AB+,Penicillin,Metformin,None,High cholesterol risk,Yes
+Sarah Taylor,65,"651 Oak St, Philadelphia, NC",86,118,No,82,97.1,AB-,Penicillin,Glipizide,Gallbladder Removal,Needs diet monitoring,Yes
+Sarah Smith,38,"555 Cedar St, Los Angeles, CA",70,123,No,88,98.8,AB-,Dust,Metformin,Bypass Surgery,Mild hypertension,Yes
+Daniel Doe,52,"678 Maple Ave, San Jose, TX",70,131,No,65,98.5,A+,Sulfa Drugs,Atorvastatin,Hip Replacement,Needs regular checkups,Yes
+Laura Lee,46,"728 Willow Dr, Phoenix, CA",74,134,No,93,97.7,AB-,Shellfish,Insulin,Gallbladder Removal,Needs regular checkups,Yes
+Jessica Wilson,78,"858 Oak St, Chicago, PA",86,142,No,94,97.5,AB+,Pollen,Aspirin,Bypass Surgery,Needs regular checkups,No
+John Smith,72,"435 Birch Rd, Dallas, TX",73,137,Yes,100,97.6,A-,Pollen,Metformin,Bypass Surgery,Requires low-sodium diet,No
+David Thomas,72,"801 Maple Ave, San Jose, IL",77,112,No,93,97.0,A+,Pollen,Metformin,Appendectomy,Mild hypertension,No
+Daniel Davis,41,"612 Main St, Philadelphia, FL",77,126,No,61,97.4,A+,Penicillin,Metformin,Hip Replacement,Mild hypertension,No
+Emily Thomas,57,"668 Cherry Blvd, Chicago, CA",74,146,No,85,98.2,B-,Penicillin,None,Gallbladder Removal,Requires low-sodium diet,No
+Jessica Smith,66,"521 Birch Rd, San Diego, IL",88,112,Yes,97,98.5,AB-,Latex,Glipizide,None,Mild hypertension,Yes
+Emily Davis,22,"445 Maple Ave, San Diego, TX",72,115,Yes,98,98.9,O+,Sulfa Drugs,Metformin,Bypass Surgery,High cholesterol risk,No
+Sarah Smith,65,"890 Elm St, Philadelphia, FL",75,117,No,91,99.4,A+,Sulfa Drugs,Lisinopril,Hip Replacement,Needs regular checkups,Yes
+Laura Brown,39,"467 Spruce Ln, Phoenix, IL",78,113,No,77,97.3,B+,Penicillin,Atorvastatin,None,Needs regular checkups,No
+John Davis,48,"255 Willow Dr, Chicago, PA",83,139,No,70,98.8,A+,Shellfish,Insulin,Hip Replacement,Mild hypertension,Yes
+Daniel Wilson,64,"483 Cherry Blvd, New York, FL",79,148,Yes,64,99.1,A-,Latex,Atorvastatin,Appendectomy,Needs diet monitoring,Yes
+David Doe,38,"105 Pine St, Los Angeles, TX",78,121,No,88,98.2,AB-,Sulfa Drugs,Atorvastatin,Tonsillectomy,Needs regular checkups,No
+Emily Brown,50,"951 Cherry Blvd, Philadelphia, FL",90,137,No,100,98.4,AB-,Shellfish,None,Hip Replacement,Mild hypertension,No
+Sarah Lee,29,"852 Willow Dr, Phoenix, NC",74,132,No,98,98.7,A+,None,Metformin,Bypass Surgery,Needs regular checkups,Yes
+Daniel Thomas,28,"537 Birch Rd, San Jose, AZ",78,122,Yes,71,98.0,B-,Shellfish,Aspirin,None,High cholesterol risk,Yes
+Sarah Doe,57,"770 Maple Ave, San Antonio, PA",70,123,No,83,97.1,B-,Peanuts,Insulin,Appendectomy,Requires low-sodium diet,Yes
+Jane Lee,63,"488 Maple Ave, San Jose, GA",85,147,Yes,93,97.4,AB-,Pollen,Metformin,Appendectomy,Mild hypertension,No
+Daniel Anderson,21,"324 Cedar St, Chicago, NY",80,140,No,93,100.0,O+,Pollen,Metformin,Tonsillectomy,Needs diet monitoring,Yes
+Daniel Taylor,65,"532 Maple Ave, San Antonio, PA",78,143,No,65,98.1,B+,None,Glipizide,Tonsillectomy,Needs diet monitoring,No
+Jessica Thomas,75,"282 Oak St, Phoenix, GA",88,132,Yes,61,97.7,B-,Penicillin,Lisinopril,Bypass Surgery,High cholesterol risk,Yes
+John Anderson,67,"822 Willow Dr, Dallas, CA",87,110,Yes,66,98.1,O+,None,None,Hip Replacement,High cholesterol risk,Yes
+Jane Wilson,53,"157 Main St, Phoenix, GA",89,144,No,86,99.2,B-,None,Metformin,Appendectomy,High cholesterol risk,Yes
+Robert Smith,77,"584 Elm St, Houston, NY",86,114,Yes,96,97.6,B+,Shellfish,Insulin,Gallbladder Removal,Needs diet monitoring,Yes
+Robert Anderson,54,"272 Spruce Ln, San Jose, PA",85,132,Yes,96,98.2,B+,Latex,Atorvastatin,Appendectomy,Needs regular checkups,No
+Sarah Anderson,47,"929 Oak St, Dallas, PA",79,133,Yes,61,99.9,AB+,Dust,Atorvastatin,Tonsillectomy,Needs regular checkups,No
+Emily Doe,42,"856 Elm St, San Antonio, CA",82,140,No,75,99.5,AB-,Peanuts,Atorvastatin,Bypass Surgery,Requires low-sodium diet,No
+John Brown,34,"351 Willow Dr, Los Angeles, TX",81,112,No,70,98.8,B+,Penicillin,Atorvastatin,Tonsillectomy,Needs regular checkups,Yes
+David Thomas,24,"451 Willow Dr, San Antonio, TX",80,122,No,90,98.1,B-,Penicillin,Atorvastatin,Gallbladder Removal,High cholesterol risk,No
+Robert Wilson,47,"618 Oak St, Los Angeles, TX",70,140,Yes,97,98.0,A+,Shellfish,Lisinopril,Appendectomy,Needs diet monitoring,No
+Daniel Martinez,36,"110 Elm St, Philadelphia, OH",78,119,Yes,65,99.0,B+,None,Metformin,Gallbladder Removal,Requires low-sodium diet,Yes
+Robert Brown,75,"306 Birch Rd, San Diego, IL",76,132,Yes,69,98.3,AB-,Pollen,None,None,Needs regular checkups,No
+Robert Davis,53,"565 Willow Dr, Chicago, AZ",87,112,Yes,99,97.3,O-,Peanuts,None,Hip Replacement,Needs diet monitoring,No
+Laura Taylor,39,"149 Birch Rd, Philadelphia, OH",81,116,No,95,98.2,AB+,Shellfish,Aspirin,Hip Replacement,Requires low-sodium diet,No
+Daniel Doe,67,"887 Cedar St, Chicago, AZ",82,128,No,63,99.7,B+,Shellfish,Insulin,None,Needs diet monitoring,No
+Laura Lee,73,"531 Oak St, Houston, FL",79,125,Yes,82,97.5,O+,Pollen,Lisinopril,Appendectomy,High cholesterol risk,Yes
+Sarah Lee,70,"575 Elm St, Houston, OH",70,120,Yes,81,98.1,A-,Shellfish,None,Tonsillectomy,High cholesterol risk,No
+Jessica Taylor,35,"877 Pine St, New York, PA",84,112,No,81,97.1,A+,Peanuts,Metformin,Gallbladder Removal,Requires low-sodium diet,No
+Michael Martinez,48,"901 Cherry Blvd, Chicago, GA",75,139,No,89,97.7,AB-,Pollen,Glipizide,Bypass Surgery,Requires low-sodium diet,Yes
+Laura Taylor,79,"705 Maple Ave, Houston, FL",84,139,Yes,68,97.3,AB+,Latex,None,Hip Replacement,Needs regular checkups,No
+Robert Thomas,55,"148 Oak St, Houston, FL",84,126,No,85,99.5,A+,Dust,Metformin,Hip Replacement,Requires low-sodium diet,Yes
+Jane Lee,36,"346 Pine St, Chicago, TX",77,130,Yes,95,98.3,O-,Dust,None,Gallbladder Removal,Needs diet monitoring,No
+Laura Taylor,57,"912 Willow Dr, Chicago, IL",85,113,No,91,99.8,A+,Penicillin,Atorvastatin,Hip Replacement,Requires low-sodium diet,No
+Daniel Smith,30,"734 Cherry Blvd, San Jose, TX",73,128,No,94,98.2,A+,Penicillin,Aspirin,Tonsillectomy,Needs diet monitoring,Yes
+Daniel Doe,28,"110 Cherry Blvd, Philadelphia, AZ",76,134,No,82,97.1,A-,Dust,Glipizide,None,Mild hypertension,No
+David Anderson,23,"944 Main St, Phoenix, CA",77,148,No,70,98.3,B+,Latex,Atorvastatin,Gallbladder Removal,Needs diet monitoring,Yes
