@@ -3,14 +3,15 @@ import pickle
 import numpy as np
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
+from pydantic import BaseModel
 
 app = Flask(__name__)
 
 # Load models
-with open('/mnt/data/breast_cancer.pkl', 'rb') as f:
+with open(r'pickle\breast_cancer.pkl', 'rb') as f:
     breast_cancer_pipeline = pickle.load(f)
 
-with open('/mnt/data/heart_rf.pkl', 'rb') as f:
+with open(r'pickle\heart_rf.pkl', 'rb') as f:
     heart_disease_pipeline = pickle.load(f)
 
 @app.route('/')
@@ -50,6 +51,29 @@ def positive_heart():
 @app.route('/negative_heart')
 def negative_heart():
     return "Heart Disease Prediction: Negative"
+
+def fetch_patient_details(patient_name):
+    df = pd.read_csv("patients.csv")
+    df["Name"] = df["Name"].str.strip().str.lower()  
+    patient_name = patient_name.strip().lower()  
+
+    patient_data = df[df["Name"] == patient_name] 
+
+    if not patient_data.empty:
+        return patient_data.to_dict(orient="records")[0]
+    else:
+        return None
+
+class PatientSearchRequest(BaseModel):
+    patient_name: str
+
+@app.post("/search-patient")
+async def search_patient(request: PatientSearchRequest):
+    patient_details = fetch_patient_details(request.patient_name)
+    if patient_details:
+        return {"status": "success", "patient_details": patient_details}
+    else:
+        return {"status": "error", "message": "Patient not found"}
 
 if __name__ == '__main__':
     app.run(debug=True)
