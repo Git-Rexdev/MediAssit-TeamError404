@@ -147,6 +147,10 @@
   display: none;
   position: fixed;
   bottom: 0;
+  border: 2px solid black;
+  border-radius: 24px;
+  text-align: center;
+  z-index: 9;
   right: 15px;
   z-index: 9;
 }

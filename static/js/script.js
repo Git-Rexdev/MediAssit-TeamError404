@@ -16,34 +16,48 @@ document.querySelectorAll('.service-link').forEach(link => {
   // chatbot 
   let context = "";
 
+// Function to open chat popup
 function openForm() {
-    document.getElementById("myForm").style.display = "block";
+  document.getElementById("myForm").style.display = "block";
 }
 
+// Function to close chat popup
 function closeForm() {
-    document.getElementById("myForm").style.display = "none";
+  document.getElementById("myForm").style.display = "none";
 }
 
+// Function to send a message to the chatbot backend
 async function sendMessage(event) {
-event.preventDefault();
-let message = document.getElementById("message").value;
-let messagesDiv = document.getElementById("messages");
+  event.preventDefault();
 
-messagesDiv.innerHTML += `<p class='user'><b>You:</b> ${message}</p>`;
-document.getElementById("message").value = "";
+  let messageInput = document.getElementById("message");
+  let messagesDiv = document.getElementById("messages");
+  let userMessage = messageInput.value.trim();
 
-let response = await fetch("http://localhost:8000/chat", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ question: message, context: context })
-});
+  if (!userMessage) return; // Prevent empty messages
 
-let data = await response.json();
-context = data.updated_context;
+  // Display user's message
+  messagesDiv.innerHTML += `<p class='user'><b>You:</b> ${userMessage}</p>`;
+  messageInput.value = "";
 
-if (data.answer.includes("Patient Details:")) {
-    messagesDiv.innerHTML += `<p class='bot'><b>Bot:</b><br><pre>${data.answer.replace(/\n/g, '<br>')}</pre></p>`;
-} else {
-    messagesDiv.innerHTML += `<p class='bot'><b>Bot:</b> ${data.answer}</p>`;
-}
+  try {
+      // Send message to backend chatbot API
+      let response = await fetch("http://127.0.0.1:8000/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ question: userMessage })
+      });
+
+      let data = await response.json();
+
+      // Display chatbot's response
+      messagesDiv.innerHTML += `<p class='bot'><b>Bot:</b> ${data.answer}</p>`;
+
+      // Auto-scroll to the latest message
+      messagesDiv.scrollTop = messagesDiv.scrollHeight;
+
+  } catch (error) {
+      console.error("Error communicating with chatbot:", error);
+      messagesDiv.innerHTML += `<p class='error'><b>Error:</b> Unable to get a response from the chatbot.</p>`;
+  }
 }
