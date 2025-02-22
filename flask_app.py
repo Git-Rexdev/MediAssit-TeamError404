@@ -4,6 +4,7 @@ import numpy as np
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from pydantic import BaseModel
+import pandas as pd
 
 app = Flask(__name__)
 
