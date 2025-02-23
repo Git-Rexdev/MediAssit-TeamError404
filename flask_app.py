@@ -22,9 +22,6 @@ with open("pickle/brain_tumor.pkl", "rb") as f:
 with open(r'pickle\breast_cancer.pkl', 'rb') as f:
     breast_cancer_pipeline = pickle.load(f)
 
-with open(r'pickle\heart_rf.pkl', 'rb') as f:
-    heart_disease_pipeline = pickle.load(f)
-
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -67,19 +64,7 @@ def predict_breast_cancer():
         return jsonify({'status': 'success', 'prediction': result})
     except Exception as e:
         return jsonify({'status': 'error', 'message': str(e)})
-
-# API route to predict Heart Disease
-@app.route('/predict_heart_disease', methods=['POST'])
-def predict_heart_disease():
-    try:
-        data = request.get_json()
-        features = np.array(data['features']).reshape(1, -1)  # Convert input to NumPy array
-        prediction = heart_disease_pipeline.predict(features)
-        result = "Positive" if prediction[0] == 1 else "Negative"
-        return jsonify({'status': 'success', 'prediction': result})
-    except Exception as e:
-        return jsonify({'status': 'error', 'message': str(e)})
-
+    
 def fetch_patient_details(patient_name):
     df = pd.read_csv("patients.csv")
     df["Name"] = df["Name"].str.strip().str.lower()  
@@ -138,7 +123,7 @@ class PatientSearchRequest(BaseModel):
 
 @app.post("/search-patient")
 async def search_patient(request: PatientSearchRequest):
-    patient_details = fetch_patient_details(request.patient_name)
+    patient_details = fetch_patient_details(request.patient_name)   
     if patient_details:
         return {"status": "success", "patient_details": patient_details}
     else:

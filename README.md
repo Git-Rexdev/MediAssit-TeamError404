@@ -81,7 +81,7 @@ MedAssist is a healthcare management web application designed to streamline medi
 ## Technologies Used
 ### Frontend
 - HTML, CSS, JavaScript
-- Responsive UI with **Bootstrap & FontAwesome**
+- Interactive UI with **FontAwesome**
 
 ### Backend
 - **Flask** (API handling & application logic)
