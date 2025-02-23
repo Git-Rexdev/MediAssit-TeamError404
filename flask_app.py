@@ -129,8 +129,17 @@ async def search_patient(request: PatientSearchRequest):
     else:
         return {"status": "error", "message": "Patient not found"}
 
+
+
+
+
 if __name__ == '__main__':
+
     os.makedirs(UPLOAD_FOLDER, exist_ok=True)
     os.makedirs(OUTPUT_FOLDER, exist_ok=True)
-    app.run(debug=True)
+
+
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)  # No debug mode in production
+
 
