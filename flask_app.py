@@ -1,12 +1,18 @@
-from flask import Flask, request, jsonify, redirect, url_for, render_template
+from flask import Flask, request, jsonify, redirect, url_for, render_template, send_file
 import pickle
 import numpy as np
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from pydantic import BaseModel
 import pandas as pd
+import cv2
+from supervision import Detections, BoundingBoxAnnotator, LabelAnnotator
+import os
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
+
+with open("pickle/brain_tumor.pkl", "rb") as f:
+    yolo_model = pickle.load(f)
 
 with open(r'pickle\breast_cancer.pkl', 'rb') as f:
     breast_cancer_pipeline = pickle.load(f)
@@ -33,10 +39,6 @@ def book_appointment():
 @app.route('/dashboard')
 def dashboard():
     return render_template('dashboard.html')
-
-@app.route('/ocr')
-def ocr():
-    return render_template('ocr.html')
 
 @app.route('/health_pred')
 def health_pred():
@@ -78,6 +80,47 @@ def fetch_patient_details(patient_name):
     else:
         return None
 
+UPLOAD_FOLDER = 'uploads'
+OUTPUT_FOLDER = 'outputs'
+ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
+
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['OUTPUT_FOLDER'] = OUTPUT_FOLDER
+
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+def process_image(input_image_path, output_image_path):
+    image = cv2.imread(input_image_path)
+    if image is None:
+        print("Error: Unable to read the image.")
+        return
+
+    resized = cv2.resize(image, (640, 640))
+    detections = Detections.from_ultralytics(yolo_model(resized)[0])
+    annotated = BoundingBoxAnnotator().annotate(scene=resized, detections=detections)
+    annotated = LabelAnnotator().annotate(scene=annotated, detections=detections)
+
+    cv2.imwrite(output_image_path, annotated)
+    print(f"Processed and saved: {output_image_path}")
+
+@app.route('/ocr', methods=['GET', 'POST'])
+def ocr():
+    if request.method == 'POST':
+        if 'file' not in request.files:
+            return 'No file part'
+        file = request.files['file']
+        if file.filename == '':
+            return 'No selected file'
+        if file and allowed_file(file.filename):
+            filename = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
+            file.save(filename)
+            output_filename = os.path.join(app.config['OUTPUT_FOLDER'], 'annotated_' + file.filename)
+            process_image(filename, output_filename)
+            return send_file(output_filename, mimetype='image/jpeg')
+    return render_template('ocr.html')
+
+
 class PatientSearchRequest(BaseModel):
     patient_name: str
 
@@ -90,4 +133,7 @@ async def search_patient(request: PatientSearchRequest):
         return {"status": "error", "message": "Patient not found"}
 
 if __name__ == '__main__':
+    os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+    os.makedirs(OUTPUT_FOLDER, exist_ok=True)
     app.run(debug=True)
+

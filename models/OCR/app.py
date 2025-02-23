@@ -4,12 +4,13 @@ import cv2
 from ultralytics import YOLO
 import supervision as sv
 import pyresearch
+import pickle
 
 # Initialize Flask app
 app = Flask(__name__)
 
 # Load YOLO model
-model = YOLO("BrainTumorMRI.pt")
+model = YOLO("models\OCR\BrainTumorMRI.pt")
 
 # Set upload folder and allowed extensions
 UPLOAD_FOLDER = 'uploads'
@@ -75,6 +76,18 @@ def upload_image():
             return send_file(output_filename, mimetype='image/jpeg')
     
     return render_template('ocr.html')
+
+model = YOLO("models\OCR\BrainTumorMRI.pt")
+
+with open("pickle/brain_tumor.pkl", "wb") as f:
+    pickle.dump(model, f)
+
+print("YOLO model saved as pickle.")
+
+with open("pickle/brain_tumor.pkl", "rb") as f:
+    loaded_model = pickle.load(f)
+
+print("YOLO model loaded from pickle.")
 
 if __name__ == "__main__":
     # Create upload and output folders if they don't exist
