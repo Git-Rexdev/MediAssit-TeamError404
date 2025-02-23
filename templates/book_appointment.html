@@ -4,14 +4,14 @@
     <title>Book Appointment</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/book_appointment.css') }}">
-    <script src="{{ url_for('static', filename='js/book_appointment.js') }}"></script>
+    <link rel="stylesheet" href="book_appointment.css" />
+    <script type="module" src="book_appointment.js"></script>
   </head>
   <body>
-    <!-- <nav>
-      <a href="{{ url_for('index') }}" class="navbar-brand">MedAssist</a>
-      <a href="{{ url_for('book_appointment') }}" aria-current="page">Book Appointment</a>
-    </nav> -->
+    <nav>
+      <a href="/">Home</a>
+      <a href="/page2.html" aria-current="page">Book Appointment</a>
+    </nav>
     <main>
       <div class="booking-container">
         <h1>Book an Appointment</h1>
@@ -23,7 +23,7 @@
           
           <div class="form-group">
             <label for="age">Age:</label>
-            <input type="number" id="age" name="age" min="0" max="120" required>
+            <input type="number" id="age" name="age" min="0" max="119" required>
           </div>
           
           <div class="form-group">
@@ -38,7 +38,7 @@
           
           <div class="form-group">
             <label for="description">Description of Issue:</label>
-            <textarea id="description" name="description" rows="4" required></textarea>
+            <textarea id="description" name="description" rows="5" required></textarea>
           </div>
           
           <button type="submit" class="submit-btn">Book Appointment</button>
