@@ -295,3 +295,83 @@ input:focus, select:focus {
 .hidden {
     display: none;
 }
+
+/* Output Section Styles */
+.output-section {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.prediction-result {
+    border: 1px solid #e5e7eb;
+    background-color: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.result-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.result-indicator::before {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+.result-indicator.positive::before {
+    background-color: #ef4444;
+}
+
+.result-indicator.negative::before {
+    background-color: #22c55e;
+}
+
+.result-indicator.warning::before {
+    background-color: #f59e0b;
+}
+
+.prediction-text {
+    color: #111827;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.confidence-score {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.risk-factors, .detection-details {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 1rem;
+    color: #4b5563;
+}
+
+.risk-factors h4, .detection-details h4 {
+    color: #111827;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.risk-factors ul, .detection-details ul {
+    list-style-type: disc;
+    margin-left: 1.25rem;
+}
+
+.risk-factors li, .detection-details li {
+    margin-bottom: 0.25rem;
+    color: #4b5563;
+    font-size: 0.875rem;
+}

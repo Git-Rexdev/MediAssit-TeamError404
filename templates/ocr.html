@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blood Report Summarizer</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/ocr.css') }}">
+    <link rel="stylesheet" href="../static/css/ocr.css">
 </head>
 <body>
     <header>
@@ -17,8 +17,8 @@
             <div class="upload-container">
                 <h2>Upload Blood Report</h2>
                 <div class="file-upload-container">
-                    <input type="file" id="report-file" name="report-file" accept=".jpg,.jpeg,.png" class="file-input">
-                    <label for="report-file" class="file-label">
+                    <input type="file" id="fileInput" name="report-file" accept=".jpg,.jpeg,.png" class="file-input">
+                    <label for="fileInput" class="file-label">
                         <span class="file-icon">🔬</span>
                         <span class="upload-text">Upload Blood Report Image</span>
                         <p class="upload-description">
@@ -45,43 +45,31 @@
                         <label for="report-date">Report Date</label>
                         <input type="date" id="report-date" name="report-date" required>
                     </div>
-            
-                    
                 </div>
             </div>
 
             <button type="submit" class="submit-btn" id="analyze-btn">Analyze Report</button>
         </section>
 
-        <section id="results-section" class="results-section hidden">
+        <section id="result" class="results-section hidden">
             <h2>Report Summary</h2>
             <div class="results-grid">
                 <div class="result-card">
                     <h3>Key Findings</h3>
-                    <div id="key-findings" class="findings-list">
-                        <!-- Findings will be populated here -->
-                    </div>
+                    <div id="key-findings" class="findings-list"></div>
                 </div>
                 <div class="result-card">
                     <h3>Abnormal Values</h3>
-                    <div id="abnormal-values" class="values-list">
-                        <!-- Abnormal values will be populated here -->
-                    </div>
+                    <div id="abnormal-values" class="values-list"></div>
                 </div>
                 <div class="result-card full-width">
                     <h3>Recommendations</h3>
-                    <div id="recommendations" class="recommendations-list">
-                        <!-- Recommendations will be populated here -->
-                    </div>
+                    <div id="recommendations" class="recommendations-list"></div>
                 </div>
-            </div>
-            <div class="action-buttons">
-                <button class="action-btn download-btn">Download Summary</button>
-                
             </div>
         </section>
     </main>
 
-    <script src="{{ url_for('static', filename='js/ocr.js') }}"></script>
+    <script src="../static/js/ocr.js"></script>
 </body>
 </html>
