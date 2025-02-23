@@ -8,6 +8,11 @@ import pandas as pd
 import cv2
 from supervision import Detections, BoundingBoxAnnotator, LabelAnnotator
 import os
+from pymongo import MongoClient
+
+client = MongoClient("mongodb+srv://yrane4616:y%40S%23rane46@medicare.j9svm.mongodb.net/?retryWrites=true&w=majority&appName=MediCare")  
+db = client["hospital_db"]  
+doctors_collection = db["doctor_data"]
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
 
@@ -44,7 +49,14 @@ def dashboard():
 def health_pred():
     return render_template('health_pred.html')
 
-# API route to predict Breast Cancer
+@app.route('/profile')
+def profile():
+    doctor = doctors_collection.find_one({}, {"_id": 0})  # Fetch one doctor (modify as needed)
+    if doctor:
+        return render_template('profile.html', doctor=doctor)
+    else:
+        return "Doctor not found", 404
+    
 @app.route('/predict_breast_cancer', methods=['POST'])
 def predict_breast_cancer():
     try:

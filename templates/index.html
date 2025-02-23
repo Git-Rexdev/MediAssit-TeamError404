@@ -22,7 +22,7 @@
           </div>
           <h2 class="service-title">Find a Doctor</h2>
           <p class="service-description">Search for qualified healthcare professionals in your area. Book appointments with specialists.</p>
-          <a href="#" class="service-link">Search Doctors</a>
+          <a href="{{ url_for('profile') }}" class="service-link">Search Doctors</a>
         </div>
 
        
@@ -33,7 +33,7 @@
           </div>
           <h2 class="service-title">Book Appointments</h2>
           <p class="service-description">Schedule medical appointments quickly and easily with our online booking system.</p>
-          <a href="book_appointment.html" class="service-link">Book Now</a>
+          <a href="{{ url_for('book_appointment') }}" class="service-link">Book Now</a>
         </div>
       </div>
       <div class="gif-container">
