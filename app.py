@@ -79,6 +79,33 @@ def search_doctor():
 def book_appointment():
     return render_template('book_appointment.html')
 
+@app.route('/add_appointment', methods=['GET', 'POST'])
+def add_appointment():
+    if request.method == 'POST':
+        doc_name = session.get('doc_name')
+        patient_name = request.form['name']
+        patient_age = request.form['age']
+        appointment_time = request.form['appointmentTime']
+        disease = request.form['description']
+
+        exsisting_doc = appointment_data.find_one({"doctor_name":doc_name})
+        if exsisting_doc :
+            appointment_data.update_one(
+                {"doctor_name":doc_name},
+                {"$push": {"appointments": {
+                    "patient_name": patient_name,
+                    "disease": disease,
+                    "age": patient_age,
+                    "appointment_time": appointment_time
+                }}}
+            )
+
+            return render_template('book_appointment.html')
+
+
+    # return 
+
+
 @app.route('/login_gen', methods=['POST'])
 def login_gen():
     email = request.form.get('email')
@@ -373,7 +400,10 @@ def allowed_file(filename):
 # def get_result_image(filename):
 #     return send_from_directory(RESULTS_FOLDER, filename)
 
-
+@app.route('/logout',methods=['POST','GET'])
+def logout():
+    session.pop("doc_name")
+    return redirect(url_for('login'))
 
 
 if __name__ == '__main__':
