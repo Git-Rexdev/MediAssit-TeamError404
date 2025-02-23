@@ -65,7 +65,7 @@ MedAssist is a healthcare management web application designed to streamline medi
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo-url
+   git clone https://github.com/Git-Rexdev/Techathon-Error404.git
    ```
 2. Install dependencies:
    ```sh
