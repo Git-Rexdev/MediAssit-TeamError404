@@ -77,6 +77,23 @@ MedAssist is a healthcare management web application designed to streamline medi
    ```sh
    python flask_app.py
    ```
+5. Install and set up Ollama locally:
+   - Download and install Ollama from the official website: [https://ollama.ai](https://ollama.ai)
+   - Verify installation by running:
+     ```sh
+     ollama --version
+     ```
+   - Pull the required Llama model:
+     ```sh
+     ollama pull llama3
+     ```
+   - Ensure the Ollama service is running in the background:
+     ```sh
+     ollama serve
+     ```
+6. Run command in terminal 
+   ``` uvicorn chatbot:app --host 0.0.0.0 --port 8000 --reload ```
+
 
 ## Technologies Used
 ### Frontend
