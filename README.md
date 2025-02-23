@@ -1,12 +1,12 @@
 <!-- # Techanton-Error404
 This is a repository to showcase a medical domain project created by Team Error-404 from SGU, Kolhapur at Techathon 2.0, AISSMS, Pune. For more info read Readme file -->
 
-# MedAssist - Healthcare Management System
+# MediAssist - Healthcare Management System
 
-![MedAssist Banner](static/images/Banner.png)
+![MediAssist Banner](static/images/Banner.png)
 
 ## Overview
-MedAssist is a healthcare management web application designed to streamline medical services such as appointment booking, health prediction, OCR-based medical report summarization, patient search, and chatbot assistance. 
+MediAssist is a healthcare management web application designed to streamline medical services such as appointment booking, health prediction, OCR-based medical report summarization, patient search, and chatbot assistance. 
 
 ## Features
 ### Appointment Booking
@@ -41,7 +41,7 @@ MedAssist is a healthcare management web application designed to streamline medi
 
 ## File Structure
 ```
-📂 MedAssist
+📂 MediAssist
 ├── 📂 templates
 │   ├── index.html          # Landing page with services overview
 │   ├── login.html          # User authentication page
