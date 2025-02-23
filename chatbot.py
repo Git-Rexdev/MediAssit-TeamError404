@@ -106,7 +106,7 @@ def is_medical_question(question):
     return any(re.search(rf"\b{kw}\b", question, re.IGNORECASE) for kw in medical_keywords)
 
 def fetch_patient_details(patient_name):
-    df = pd.read_csv("patients.csv")
+    df = pd.read_csv("sheets/patients.csv")
     df["Name"] = df["Name"].str.strip().str.lower()  
     patient_name = patient_name.strip().lower()  
 
