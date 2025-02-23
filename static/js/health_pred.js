@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 previewImage.src = e.target.result;
                 preview.classList.remove('hidden');
             };
-            reader.onerror = () => {
+            reader. onerror = () => {
                 showError(input, 'Error reading file');
                 preview.classList.add('hidden');
             };
@@ -157,6 +157,103 @@ document.addEventListener('DOMContentLoaded', () => {
         brainTumorFile.addEventListener('change', (e) => {
             handleImagePreview(e.target, 'brain-tumor-preview', 'brain-tumor-preview-image');
         });
+    }
+
+    // Function to show prediction results
+    function showPredictionResult(diseaseType, data) {
+        // Hide all output sections
+        document.querySelectorAll('.output-section').forEach(section => {
+            section.classList.add('hidden');
+        });
+
+        // Show the relevant output section
+        const outputSection = document.getElementById(`${diseaseType}-output`);
+        if (!outputSection) return;
+
+        outputSection.classList.remove('hidden');
+        
+        const resultIndicator = outputSection.querySelector('.result-indicator');
+        const predictionText = outputSection.querySelector('.prediction-text');
+        const confidenceScore = outputSection.querySelector('.confidence-score');
+        const riskFactors = outputSection.querySelector('.risk-factors, .detection-details');
+
+        // Clear previous content
+        resultIndicator.className = 'result-indicator';
+        predictionText.textContent = '';
+        confidenceScore.textContent = '';
+        riskFactors.innerHTML = '';
+
+        // Update with new prediction results
+        switch (diseaseType) {
+            case 'heart':
+                resultIndicator.classList.add(data.risk > 0.5 ? 'positive' : 'negative');
+                predictionText.textContent = `Heart Disease Risk: ${data.risk > 0.5 ? 'High' : 'Low'}`;
+                confidenceScore.textContent = `Confidence: ${(data.confidence * 100).toFixed(1)}%`;
+                if (data.riskFactors?.length) {
+                    riskFactors.innerHTML = `
+                        <h4>Key Risk Factors:</h4>
+                        <ul>
+                            ${data.riskFactors.map(factor => `<li>${factor}</li>`).join('')}
+                        </ul>
+                    `;
+                }
+                break;
+
+            case 'diabetes':
+                resultIndicator.classList.add(data.risk > 0.5 ? 'positive' : 'negative');
+                predictionText.textContent = `Diabetes Risk: ${data.risk > 0.5 ? 'High' : 'Low'}`;
+                confidenceScore.textContent = `Confidence: ${(data.confidence * 100).toFixed(1)}%`;
+                if (data.riskFactors?.length) {
+                    riskFactors.innerHTML = `
+                        <h4>Contributing Factors:</h4>
+                        <ul>
+                            ${data.riskFactors.map(factor => `<li>${factor}</li>`).join('')}
+                        </ul>
+                    `;
+                }
+                break;
+
+            case 'cancer':
+                resultIndicator.classList.add(data.risk > 0.5 ? 'positive' : 'negative');
+                predictionText.textContent = `Cancer Risk: ${data.risk > 0.5 ? 'High' : 'Low'}`;
+                confidenceScore.textContent = `Confidence: ${(data.confidence * 100).toFixed(1)}%`;
+                if (data.riskFactors?.length) {
+                    riskFactors.innerHTML = `
+                        <h4>Risk Indicators:</h4>
+                        <ul>
+                            ${data.riskFactors.map(factor => `<li>${factor}</li>`).join('')}
+                        </ul>
+                    `;
+                }
+                break;
+
+            case 'fracture':
+                resultIndicator.classList.add(data.detected ? 'positive' : 'negative');
+                predictionText.textContent = `Fracture ${data.detected ? 'Detected' : 'Not Detected'}`;
+                confidenceScore.textContent = `Confidence: ${(data.confidence * 100).toFixed(1)}%`;
+                if (data.details) {
+                    riskFactors.innerHTML = `
+                        <h4>Detection Details:</h4>
+                        <p>${data.details}</p>
+                    `;
+                }
+                break;
+
+            case 'brain-tumor':
+                resultIndicator.classList.add(data.detected ? 'positive' : 'negative');
+                predictionText.textContent = `Brain Tumor ${data.detected ? 'Detected' : 'Not Detected'}`;
+                confidenceScore.textContent = `Confidence: ${(data.confidence * 100).toFixed(1)}%`;
+                if (data.details) {
+                    riskFactors.innerHTML = `
+                        <h4>Detection Details:</h4>
+                        <p>${data.details}</p>
+                    `;
+                }
+                break;
+        }
+
+        // Scroll to the output section
+        outputSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     // Handle form submissions
@@ -186,11 +283,37 @@ document.addEventListener('DOMContentLoaded', () => {
                     return;
                 }
 
-                // Here you would typically send the data to your backend
-                console.log(`Processing ${diseaseType} assessment:`, Object.fromEntries(formData));
-                
-                // Show success message
-                alert(`${diseaseType.replace('-', ' ')} assessment completed! This is a demo version.`);
+                // Simulate API call with mock data (replace with actual API call)
+                const mockPrediction = {
+                    heart: {
+                        risk: Math.random(),
+                        confidence: 0.85 + Math.random() * 0.1,
+                        riskFactors: ['High blood pressure', 'Elevated cholesterol', 'Family history']
+                    },
+                    diabetes: {
+                        risk: Math.random(),
+                        confidence: 0.88 + Math.random() * 0.1,
+                        riskFactors: ['High BMI', 'Elevated glucose levels', 'Age factor']
+                    },
+                    cancer: {
+                        risk: Math.random(),
+                        confidence: 0.82 + Math.random() * 0.1,
+                        riskFactors: ['Abnormal cell growth', 'Genetic markers', 'Environmental factors']
+                    },
+                    fracture: {
+                        detected: Math.random() > 0.5,
+                        confidence: 0.90 + Math.random() * 0.1,
+                        details: 'Potential fracture detected in the proximal region'
+                    },
+                    'brain-tumor': {
+                        detected: Math.random() > 0.5,
+                        confidence: 0.95 + Math.random() * 0.05,
+                        details: 'Abnormal mass detected in the frontal lobe region'
+                    }
+                };
+
+                // Show the prediction result
+                showPredictionResult(diseaseType, mockPrediction[diseaseType]);
                 
             } catch (error) {
                 console.error(`Error processing ${diseaseType} assessment:`, error);
