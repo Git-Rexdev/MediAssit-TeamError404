@@ -92,7 +92,9 @@ MedAssist is a healthcare management web application designed to streamline medi
      ollama serve
      ```
 6. Run command in terminal 
-   ``` uvicorn chatbot:app --host 0.0.0.0 --port 8000 --reload ```
+   ```sh
+    uvicorn chatbot:app --host 0.0.0.0 --port 8000 --reload 
+    ```
 
 
 ## Technologies Used
