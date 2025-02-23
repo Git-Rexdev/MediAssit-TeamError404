@@ -19,7 +19,7 @@ app = Flask(__name__, static_folder='static', template_folder='templates')
 with open("pickle/brain_tumor.pkl", "rb") as f:
     yolo_model = pickle.load(f)
 
-with open(r'pickle\breast_cancer.pkl', 'rb') as f:
+with open(r'pickle/breast_cancer.pkl', 'rb') as f:
     breast_cancer_pipeline = pickle.load(f)
 
 @app.route('/')
