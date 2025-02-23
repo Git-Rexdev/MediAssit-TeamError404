@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MedAssist - Doctor Profile</title>
-    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
 </head>
 <body>
     <nav class="navbar">
@@ -74,11 +74,8 @@
             </div>
 
             <div class="nav-links">
-                <a href="index.html" class="nav-link"> Go Back</a>
-              
+                <a href="{{ url_for('index') }}" class="nav-link"> Go Back</a>              
             </div>
-
-            
         </div>
     </main>
 </body>
