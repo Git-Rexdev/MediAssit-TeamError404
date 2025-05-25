@@ -47,7 +47,7 @@ client = MongoClient(MONGO_URI)
 
 db = client['MediCare']
 doctor = db['doctor_data']
-patient_record = db['patient_data']
+patient_record = db['patient_record']
 appointment_data = db['appointments']
 otp_verify = db['verify_otp_email']
 alerts = db['alerts']
@@ -203,12 +203,12 @@ def ocr():
 
 #OCR Summarization
 # Azure OCR Setup
-AZURE_SUBSCRIPTION_KEY = "5zWzKCO9aRsXBxpNPDGSNWReKVY1CsEInEvsczqqIZXa9wlRXKUhJQQJ99BBACGhslBXJ3w3AAAFACOGoCDs"
-AZURE_ENDPOINT = "https://medassist4616.cognitiveservices.azure.com/"
+AZURE_SUBSCRIPTION_KEY = "DyGSY4M79hwG0BNmlJYAFNbxS8tM0hCqeJO8h7bMCTUJ3ACOYFrfJQQJ99BEACGhslBXJ3w3AAAFACOGvIeF"
+AZURE_ENDPOINT = "https://mediassit404.cognitiveservices.azure.com/"
 client = ComputerVisionClient(AZURE_ENDPOINT, CognitiveServicesCredentials(AZURE_SUBSCRIPTION_KEY))
 
 # Google Gemini AI Setup
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDvk8ir9JE41VZWoeGqVlPrFrjI4L19WtM"
+os.environ["GOOGLE_API_KEY"] = "AIzaSyAgbm7-9iP4Z_CODVJf6xEeLS8fH-btDr4"
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 
 generation_config = {
@@ -399,6 +399,17 @@ def allowed_file(filename):
 # @app.route("/results/<filename>")
 # def get_result_image(filename):
 #     return send_from_directory(RESULTS_FOLDER, filename)
+
+@app.route('/search',methods=['GET','POST'])
+def search():
+    if request.method == 'POST':
+        search_query = request.form['search_query']
+        print(search_query)
+        regex_pattern = f".*^{search_query}.*"
+        search_result = list(patient_record.find({"Name":{"$regex": regex_pattern, "$options": "i"}}))
+        # print(search_result)
+        return render_template('search_result.html',user=search_result)
+
 
 @app.route('/logout',methods=['POST','GET'])
 def logout():

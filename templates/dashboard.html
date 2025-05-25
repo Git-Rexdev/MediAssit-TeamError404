@@ -12,10 +12,14 @@
 <body>
     <nav class="navbar">
         <a href="{{ url_for('index') }}" class="navbar-brand">MedAssist</a>
-        <div class="search-container">
-            <input type="text" placeholder="Search..." class="search-bar">
-            <i class="fas fa-search search-icon"></i>
-        </div>
+        <form action="/search" method="post">
+            <div class="search-container">
+                <label for="search_query"></label>
+                <input type="text" placeholder="Search..." id="search_query" name="search_query" class="search-bar">
+                <i class="fas fa-search search-icon"></i>
+                <button type="submit" hidden></button>
+            </div>
+        </form>
         <div class="nav-right">
             <a href="{{ url_for('health_pred') }}" class="nav-link">Medical Prediction</a>
             <div class="profile">
