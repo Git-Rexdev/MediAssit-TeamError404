@@ -22,7 +22,7 @@
           </div>
           <h2 class="service-title">Find a Doctor</h2>
           <p class="service-description">Search for qualified healthcare professionals in your area. Book appointments with specialists.</p>
-          <a href="#" class="login-btn">Search Doctors</a>
+          <a href="/search_doctor" class="login-btn">Search Doctors</a>
         </div>
 
        
@@ -42,9 +42,9 @@
 
 
       </div>
-      <button class="open-button" onclick="openForm()">Chat</button>
+      <!-- <button class="open-button" onclick="openForm()">Chat</button> -->
 
-    <div class="chat-popup" id="myForm">
+    <!-- <div class="chat-popup" id="myForm">
         <form class="form-container" onsubmit="sendMessage(event)">
             <i class="fa-solid fa-chalkboard-user"></i> <h3>Chat with us</h3>
             <div id="messages"></div>
@@ -52,8 +52,8 @@
             <button type="submit" class="btn">Send</button>
             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
         </form>
-    </div>
-      
+    </div> -->
+
     </main>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>

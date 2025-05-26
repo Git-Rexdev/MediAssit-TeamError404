@@ -73,7 +73,7 @@ def login():
 
 @app.route('/search_doctor', methods=['GET', 'POST'])
 def search_doctor():
-    return render_template('search_doctor.html')
+    return render_template('profile.html')
 
 @app.route('/book_appointment', methods=['GET', 'POST'])
 def book_appointment():
